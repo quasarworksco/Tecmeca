@@ -77,6 +77,42 @@ h1 .w{color:#fff}
 .c3 .van span{color:#fff;font-size:30px;text-align:center;line-height:1.05}
 .c3 .brandbox{position:absolute;left:70px;right:70px;top:980px;z-index:3;display:grid;gap:14px}
 .c3 .brandbox small{font:700 20px "JetBrains Mono";letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+
+/* ---------- light theme: clear, low-glare, feed-friendly ---------- */
+.post{background:#f6f5f2;color:#18181b}
+.grid{background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px)}
+.glow{filter:none;background:radial-gradient(circle,rgba(238,51,34,.09),transparent 65%)}
+.circ path{stroke:rgba(0,0,0,.1)}
+.circ .p{stroke:var(--red)}
+.circ circle{fill:#f6f5f2;stroke:rgba(0,0,0,.25)}
+.tag{background:#fff;border-color:#e4e4e7;color:#18181b;box-shadow:0 6px 18px -10px rgba(0,0,0,.25)}
+.tag i{box-shadow:0 0 0 6px rgba(238,51,34,.15)}
+h1{color:#18181b}
+h1 em{text-shadow:none}
+.lead{color:#3f3f46}
+.chips span{background:#fff;border-color:#e4e4e7;color:#18181b;box-shadow:0 8px 20px -14px rgba(0,0,0,.3)}
+.chips span b{color:#fff}
+.cta{background:#fff;border-top:2px solid #ececee;padding:30px 70px 40px}
+.btn{color:#fff;box-shadow:0 12px 26px -14px rgba(238,51,34,.7)}
+.contact b{color:#18181b}
+.contact small{color:#52525b}
+.brands{color:#52525b}
+.c1 .readout b{color:#18181b}
+.c1 .readout small{color:#71717a}
+.c2 .list div{background:#fff;border-color:#e4e4e7;color:#18181b;box-shadow:0 10px 24px -16px rgba(0,0,0,.3)}
+.c2 .list i{background:rgba(238,51,34,.1)}
+.c2 .photo{border-color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.c2 .photo::after{display:none}
+.c2 .hud{background:#fff;border-color:#e4e4e7;color:#18181b;box-shadow:0 18px 40px -20px rgba(0,0,0,.4)}
+.c2 .hud small{color:#71717a}
+.c3 .lamp{background:#fff;border-color:#e4e4e7;box-shadow:0 14px 30px -20px rgba(0,0,0,.35)}
+.c3 .lamp svg{filter:none}
+.c3 .lamp span{color:#18181b}
+.c3 .lamp.amber{color:#f59e0b}
+.c3 .lamp.red{color:#ee3322}
+.c3 .van{background:var(--red);border-color:var(--red)}
+.c3 .van span{color:#fff}
+.c3 .brandbox small{color:#71717a}
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -85,6 +121,12 @@ h1 .w{color:#fff}
     <path d="M41 62 L61 32 L48 64 Z" fill="#fff"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
     <text x="92" y="52" font-family="Saira" font-weight="900" font-style="italic" font-size="46" fill="#ee3322" stroke="#fff" stroke-width="2.5" paint-order="stroke" textLength="228" lengthAdjust="spacingAndGlyphs">TECMECA</text>
     <text x="94" y="74" font-family="Saira" font-weight="500" font-size="13.5" fill="#fff" textLength="224" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+  </symbol>
+  <symbol id="logo-dark" viewBox="0 0 330 84">
+    <g fill="none" stroke-width="9"><path d="M13 60 A32 32 0 0 1 39.4 28.5" stroke="#18181b" stroke-dasharray="13 4"/><path d="M50.6 28.5 A32 32 0 0 1 77 60" stroke="#ee3322" stroke-dasharray="13 4"/></g>
+    <path d="M41 62 L61 32 L48 64 Z" fill="#18181b"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
+    <text x="92" y="52" font-family="Saira" font-weight="900" font-style="italic" font-size="46" fill="#ee3322" stroke="#18181b" stroke-width="2.5" paint-order="stroke" textLength="228" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+    <text x="94" y="74" font-family="Saira" font-weight="500" font-size="13.5" fill="#18181b" textLength="224" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
   </symbol>
   <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></symbol>
   <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
@@ -102,19 +144,18 @@ h1 .w{color:#fff}
 <!-- ================= 1 ES · TUNING ================= -->
 <section class="post c1" id="p1">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="pg" d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
   <svg class="gauge" viewBox="0 0 600 600">
-    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="3" stroke-dasharray="4 14"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="26" stroke-linecap="round"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="60" stroke-linecap="round" stroke-dasharray="1150 2000" opacity=".22"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
-    <g stroke="rgba(255,255,255,.4)" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
+    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="3" stroke-dasharray="4 14"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#e7e7ea" stroke-width="26" stroke-linecap="round"/>
+        <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
+    <g stroke="#71717a" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
     <g stroke="#ee3322" stroke-width="5"><path d="M540 300 H508"/><path d="M473 473 L450 450"/></g>
-    <path d="M292 300 L496 236 L300 312 Z" fill="#fff"/>
-    <circle cx="300" cy="300" r="30" fill="#0b0b0c" stroke="#ee3322" stroke-width="8"/>
+    <path d="M292 300 L496 236 L300 312 Z" fill="#18181b"/>
+    <circle cx="300" cy="300" r="30" fill="#fff" stroke="#ee3322" stroke-width="8"/>
   </svg>
   <div class="readout"><b>7.8</b><small>RPM ×1000</small></div>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Chip tuning</span></div>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Chip tuning</span></div>
   <div class="copy">
     <span class="kicker">Reprogramación ECU</span>
     <h1>Más potencia.<br><em>Más respuesta.</em></h1>
@@ -129,19 +170,18 @@ h1 .w{color:#fff}
 <!-- ================= 2 EN · TUNING ================= -->
 <section class="post c1" id="p2">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="pg" d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
   <svg class="gauge" viewBox="0 0 600 600">
-    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="3" stroke-dasharray="4 14"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="26" stroke-linecap="round"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="60" stroke-linecap="round" stroke-dasharray="1150 2000" opacity=".22"/>
-    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
-    <g stroke="rgba(255,255,255,.4)" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
+    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="3" stroke-dasharray="4 14"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#e7e7ea" stroke-width="26" stroke-linecap="round"/>
+        <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
+    <g stroke="#71717a" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
     <g stroke="#ee3322" stroke-width="5"><path d="M540 300 H508"/><path d="M473 473 L450 450"/></g>
-    <path d="M292 300 L496 236 L300 312 Z" fill="#fff"/>
-    <circle cx="300" cy="300" r="30" fill="#0b0b0c" stroke="#ee3322" stroke-width="8"/>
+    <path d="M292 300 L496 236 L300 312 Z" fill="#18181b"/>
+    <circle cx="300" cy="300" r="30" fill="#fff" stroke="#ee3322" stroke-width="8"/>
   </svg>
   <div class="readout"><b>7.8</b><small>RPM ×1000</small></div>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Chip tuning</span></div>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Chip tuning</span></div>
   <div class="copy">
     <span class="kicker">ECU reflash</span>
     <h1>More power.<br><em>Sharper response.</em></h1>
@@ -156,8 +196,8 @@ h1 .w{color:#fff}
 <!-- ================= 3 ES · ECU ================= -->
 <section class="post c2" id="p3">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="pg" d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
   <div class="copy">
     <span class="kicker">Computadoras · ECU</span>
     <h1>¿Cambiaste la<br><em>computadora?</em></h1>
@@ -177,8 +217,8 @@ h1 .w{color:#fff}
 <!-- ================= 4 EN · ECU ================= -->
 <section class="post c2" id="p4">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="pg" d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Mobile service</span></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Mobile service</span></div>
   <div class="copy">
     <span class="kicker">Computers · ECU</span>
     <h1>Replaced your<br><em>computer?</em></h1>
@@ -198,8 +238,8 @@ h1 .w{color:#fff}
 <!-- ================= 5 ES · LAMPS ================= -->
 <section class="post c3" id="p5">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="pg" d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
   <div class="copy">
     <span class="kicker">Diagnóstico · DTC off · Airbag</span>
     <h1>¿Se encendió<br>esta <em>luz?</em></h1>
@@ -217,8 +257,8 @@ h1 .w{color:#fff}
 <!-- ================= 6 EN · LAMPS ================= -->
 <section class="post c3" id="p6">
   <div class="grid"></div><div class="glow"></div>
-  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="pg" d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
-  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Mobile service</span></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo-dark"/></svg><span class="tag"><i></i>Mobile service</span></div>
   <div class="copy">
     <span class="kicker">Diagnostics · DTC off · Airbag</span>
     <h1>Is this light<br><em>on?</em></h1>
