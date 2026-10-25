@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propuesta: Sitio web + Panel CRM | Tecmeca · DGP Global Group</title>
+  <meta name="description" content="Propuesta comercial de DGP Global Group para Tecmeca Auto Electrical Engineering: sitio web profesional y panel CRM para el control total del taller." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Propuesta: Sitio web + Panel CRM para Tecmeca" />
+  <meta property="og:description" content="Preparada por DGP Global Group. Sitio web + CRM del taller · $865 · entrega en 5 días." />
+  <meta property="og:image" content="../assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300..900;1,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mock.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="is-loading">
+
+<!-- ================= SVG sprite ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="crGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ee3322" stop-opacity=".28"/><stop offset="1" stop-color="#ee3322" stop-opacity="0"/></linearGradient>
+  </defs>
+  <symbol id="logo-mini" viewBox="0 0 330 84">
+    <g fill="none" stroke-width="9"><path d="M13 60 A32 32 0 0 1 39.4 28.5" stroke="#fff" stroke-dasharray="13 4"/><path d="M50.6 28.5 A32 32 0 0 1 77 60" stroke="#ee3322" stroke-dasharray="13 4"/></g>
+    <path d="M41 62 L61 32 L48 64 Z" fill="currentColor"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
+    <text x="92" y="52" font-family="Saira, sans-serif" font-weight="900" font-style="italic" font-size="46" fill="#ee3322" stroke="#fff" stroke-width="2.5" paint-order="stroke" textLength="228" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+    <text x="94" y="74" font-family="Saira, sans-serif" font-weight="500" font-size="13.5" fill="currentColor" textLength="224" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+  </symbol>
+  <symbol id="logo-full" viewBox="0 0 680 365">
+    <g fill="none" stroke-width="24"><path d="M162.6 220.5 A170 170 0 0 1 374 85.8" stroke="#fff" stroke-dasharray="44 9"/><path d="M393.7 92.4 A170 170 0 0 1 489.7 191.9" stroke="#ee3322" stroke-dasharray="40 9"/></g>
+    <path d="M306 238 L356 66 L326 240 Z" fill="#e2e2e2"/>
+    <path fill="#fff" d="M60 262 C62 240 84 228 118 221 L210 204 C252 178 300 160 352 156 C414 152 466 162 506 182 C540 196 580 208 606 218 C624 226 630 244 626 262 Z"/>
+    <path fill="#151517" d="M262 204 C300 180 338 170 380 169 L414 170 L424 202 Z M436 172 C462 176 486 186 500 200 L440 202 Z M76 238 L132 232 L122 243 Z"/>
+    <path fill="#ee3322" d="M330 233 L548 221 L528 233 Z"/>
+    <text x="340" y="322" text-anchor="middle" font-family="Saira, sans-serif" font-weight="900" font-style="italic" font-size="112" fill="#ee3322" stroke="#fff" stroke-width="7" paint-order="stroke" textLength="600" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+    <text x="340" y="356" text-anchor="middle" font-family="Saira, sans-serif" font-weight="500" font-size="30" fill="currentColor" textLength="580" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+  </symbol>
+  <symbol id="car-side" viewBox="0 0 120 50"><path d="M6 36 C6 30 10 27 18 26 L34 23 C42 15 52 11 64 11 C78 11 88 15 96 22 C104 24 112 26 114 30 L114 36 Z" fill="currentColor"/><path d="M40 23 C46 17 54 15 62 15 L64 23 Z M68 15 C78 15 86 18 91 23 L70 23 Z" fill="#fff" opacity=".85"/><circle cx="30" cy="37" r="8" fill="#18181b"/><circle cx="30" cy="37" r="3.5" fill="#d4d4d8"/><circle cx="92" cy="37" r="8" fill="#18181b"/><circle cx="92" cy="37" r="3.5" fill="#d4d4d8"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 11v2M6 10v4M10 10v4"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 21 2M16 7l3 3M18.5 4.5l2 2"/></symbol>
+  <symbol id="i-light" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24"><path d="M3 10h3l2-3h6l2 2h2v3h2v-2h1v7h-1v-2h-2v3h-3l-2 2H9v-3H6v-2H3z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17H3v-4l2-5h14l2 5v4h-2M3 13h18M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-1a6 6 0 0 1 12 0v1M16 3.1a4 4 0 0 1 0 7.8M22 21v-1a6 6 0 0 0-4-5.7"/></symbol>
+  <symbol id="i-invoice" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15v3M12 10v8M17 6v12"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-kanban" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v12"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1zM12 15l-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.8 1.2 6.9-6.2-3.2L5.8 21 7 14.1 2 9.3l6.9-1z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-15 6.7L3 16M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M3 21v-5h5"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></symbol>
+</svg>
+
+<!-- ================= preloader ================= -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__gauge" viewBox="0 0 320 230">
+      <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#ee3322"/><stop offset="1" stop-color="#ffb347"/></linearGradient></defs>
+      <path class="arc-bg" d="M47 195 A130 130 0 1 1 273 195"/>
+      <path class="arc" id="loaderArc" d="M47 195 A130 130 0 1 1 273 195"/>
+      <g id="loaderTicks"></g>
+      <g class="needle" id="loaderNeedle"><path d="M156 170 L160 62 L164 170 Z" fill="#fff"/><circle cx="160" cy="170" r="11" fill="#0b0b0c" stroke="#ee3322" stroke-width="4"/></g>
+    </svg>
+    <div class="loader__num"><span id="loaderNum">0</span><small>%</small></div>
+    <div class="loader__txt">Encendiendo propuesta · DGP Global Group</div>
+  </div>
+  <div class="loader__curtain"><i></i><i></i></div>
+</div>
+
+<div class="volt" id="volt" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<!-- ================= top bar ================= -->
+<header class="bar" id="bar">
+  <a class="bar__brand" href="#top" aria-label="Tecmeca · Propuesta">
+    <svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg>
+    <span>Propuesta comercial<small>por DGP Global Group</small></span>
+  </a>
+  <nav class="bar__nav" aria-label="Secciones">
+    <a href="#sitio">Sitio web</a>
+    <a href="#crm">Panel CRM</a>
+    <a href="#entrega">Entrega</a>
+    <a href="#inversion">Inversión</a>
+  </nav>
+  <button class="bar__btn bar__btn--ghost" type="button" onclick="window.print()">Guardar PDF</button>
+  <a class="bar__btn bar__btn--red" href="#inversion" data-magnet>Ver inversión</a>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <svg class="circuit" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="trace" d="M0 210 H240 L300 270 H560 L610 220 H760" /><path class="pulse" d="M0 210 H240 L300 270 H560 L610 220 H760" style="--d:0s" />
+    <path class="trace" d="M1440 140 H1200 L1140 200 H980 L940 160 H860" /><path class="pulse" d="M1440 140 H1200 L1140 200 H980 L940 160 H860" style="--d:1.6s" />
+    <path class="trace" d="M0 760 H200 L280 680 H460 L510 730 H700" /><path class="pulse" d="M0 760 H200 L280 680 H460 L510 730 H700" style="--d:2.8s" />
+    <path class="trace" d="M110 0 V100 L170 160 V320 L130 360 V520" /><path class="pulse" d="M110 0 V100 L170 160 V320 L130 360 V520" style="--d:.9s" />
+    <path class="trace" d="M1340 900 V790 L1290 740 V560 L1330 520 V380" /><path class="pulse" d="M1340 900 V790 L1290 740 V560 L1330 520 V380" style="--d:3.9s" />
+    <circle class="node" cx="760" cy="220" r="6" /><circle class="node" cx="860" cy="160" r="6" /><circle class="node" cx="700" cy="730" r="6" /><circle class="node" cx="130" cy="520" r="6" /><circle class="node" cx="1330" cy="380" r="6" />
+  </svg>
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero__cols">
+      <div>
+        <div class="hero__kicker" data-in style="--d:.05s"><b>Propuesta</b> Tecmeca · Arlington, TX</div>
+        <h1 aria-label="Sitio web y Panel CRM para Tecmeca">
+          <span class="ln"><span style="--i:0">Sitio web</span></span>
+          <span class="ln"><span style="--i:1">+ Panel CRM</span></span>
+          <span class="ln"><span style="--i:2">para <em>Tecmeca.</em></span></span>
+        </h1>
+        <p class="hero__lead" data-in style="--d:.55s">Un sitio web que convierte visitas en citas y un sistema que controla todo el taller: entradas y salidas de autos, órdenes de trabajo, facturación automática, pagos y call center. Todo conectado, todo en un solo panel.</p>
+        <div class="hero__actions" data-in style="--d:.7s">
+          <a class="btn btn--red" href="#sitio" data-magnet>Ver el sitio web <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--outline" href="#crm" data-magnet>Ver el panel CRM</a>
+        </div>
+      </div>
+      <div class="hv" data-in style="--d:.3s" id="hv">
+        <svg class="hv__gauge" id="hvGauge" viewBox="0 0 560 560" aria-hidden="true">
+          <g class="rot"><circle class="ring" cx="280" cy="280" r="268" stroke-dasharray="4 10" /></g>
+          <circle class="ring" cx="280" cy="280" r="250" />
+          <path class="arc" id="hvArc" d="" />
+          <g class="ticks" id="hvTicks"></g>
+          <g class="nums" id="hvNums"></g>
+          <g class="needle" id="hvNeedle"><path d="M274 280 L280 82 L286 280 Z" fill="#fff" /><circle class="hub" cx="280" cy="280" r="18" /></g>
+        </svg>
+        <div class="hv__readout"><b id="hvRead">0.0</b><small>RPM ×1000</small></div>
+        <div class="hv__card" id="hvCard"><img src="../assets/diagnostico.webp" alt="Escáner de diagnóstico automotriz conectado a un vehículo" width="341" height="455" /></div>
+        <div class="hv__chip hv__chip--1"><i class="g"><svg class="ic"><use href="#i-check"/></svg></i><div><b>Cita agendada</b><small>Toyota Camry · 9:30 AM</small></div></div>
+        <div class="hv__chip hv__chip--2"><i><svg class="ic"><use href="#i-invoice"/></svg></i><div><b>Factura #0418 enviada</b><small>$503.90 · por WhatsApp</small></div></div>
+        <div class="hv__chip hv__chip--3"><i class="g"><svg class="ic"><use href="#i-dollar"/></svg></i><div><b>Pago recibido</b><small>Tarjeta · F-150</small></div></div>
+      </div>
+    </div>
+    <div class="meta" data-in style="--d:.9s">
+      <div><small>Preparada para</small><strong>Tecmeca · Jesús Méndez &amp; Euclides Montero</strong></div>
+      <div><small>Preparada por</small><strong>DGP Global Group</strong></div>
+      <div><small>Entrega</small><strong><b>5 días</b> máximo</strong></div>
+      <div><small>Inversión</small><strong>$865 · pago 60% / 40%</strong></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track">
+  <span>Sitio web profesional</span><span>Citas en línea</span><span>Entradas y salidas</span><span>Órdenes de trabajo</span><span>Facturación automática</span><span>Pagos en línea</span><span>Call center</span><span>Inventario</span><span>Reportes</span>
+  <span>Sitio web profesional</span><span>Citas en línea</span><span>Entradas y salidas</span><span>Órdenes de trabajo</span><span>Facturación automática</span><span>Pagos en línea</span><span>Call center</span><span>Inventario</span><span>Reportes</span>
+</div></div>
+
+<!-- ================= 01 OVERVIEW ================= -->
+<section class="ov" id="resumen">
+  <div class="container">
+    <div class="ov__head">
+      <div>
+        <p class="label rv">01 — La propuesta</p>
+        <h2 class="h2 split">Dos sistemas. <em>Un solo motor.</em></h2>
+      </div>
+      <p class="sub rv" style="--d:.15s">Tecmeca ya tiene la experiencia y el equipo de diagnóstico. Le damos la presencia digital y el sistema de control a la altura de su trabajo: los clientes te encuentran en Google, agendan solos, y cada auto se controla desde que entra hasta que sale pagado.</p>
+    </div>
+
+    <div class="duo-prod">
+      <article class="prod rv" data-tilt data-spot>
+        <span class="prod__num">01</span>
+        <div class="prod__ic"><svg class="ic"><use href="#i-globe"/></svg></div>
+        <h3>Sitio web profesional</h3>
+        <p>Bilingüe, rápido y diseñado con la imagen de Tecmeca. Muestra servicios, genera confianza y convierte cada visita en una llamada, un WhatsApp o una cita agendada.</p>
+        <div class="tags"><span>Inicio</span><span>Servicios</span><span>Agenda en línea</span><span>Estado de mi vehículo</span><span>Contacto + mapa</span><span>ES / EN</span><span>SEO local</span></div>
+      </article>
+      <article class="prod rv" style="--d:.12s" data-tilt data-spot>
+        <span class="prod__num">02</span>
+        <div class="prod__ic"><svg class="ic"><use href="#i-grid"/></svg></div>
+        <h3>Panel CRM del taller</h3>
+        <p>El cerebro del negocio. Recepción de autos con fotos y firma, órdenes de trabajo, cotizaciones, facturas que se generan solas, cobros, call center, inventario y reportes.</p>
+        <div class="tags"><span>Entradas / salidas</span><span>Órdenes</span><span>Facturación auto</span><span>Pagos</span><span>Call center</span><span>Inventario</span><span>Equipo</span></div>
+      </article>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat"><b><span data-count="5">0</span><sup>días</sup></b><span>Entrega máxima de todo el proyecto</span></div>
+      <div class="stat"><b><span data-count="10">0</span><sup>+</sup></b><span>Módulos de control para el taller</span></div>
+      <div class="stat"><b><span data-count="24">0</span><sup>/7</sup></b><span>Tus clientes agendan a cualquier hora</span></div>
+      <div class="stat"><b><span data-count="100">0</span><sup>%</sup></b><span>Tuyo: datos, dominio y panel a nombre de Tecmeca</span></div>
+    </div>
+
+    <div class="pipe">
+      <h3 class="rv">Así viaja cada cliente por el sistema</h3>
+      <p class="rv">Del primer clic a la factura pagada, sin papeles ni hojas de Excel. Cada paso queda registrado y el cliente recibe avisos automáticos por WhatsApp.</p>
+      <div class="pipe__track rv" id="pipe">
+        <div class="pipe__line" aria-hidden="true"></div>
+        <div class="pipe__step"><div class="pipe__dot"><svg class="ic"><use href="#i-globe"/></svg></div><div><b>Web · llamada · WhatsApp</b><small>El cliente te encuentra y agenda su cita</small></div></div>
+        <div class="pipe__step"><div class="pipe__dot"><svg class="ic"><use href="#i-in"/></svg></div><div><b>Entrada del auto</b><small>Fotos, millaje, combustible y firma digital</small></div></div>
+        <div class="pipe__step"><div class="pipe__dot"><svg class="ic"><use href="#i-wrench"/></svg></div><div><b>Diagnóstico y orden</b><small>Cotización aprobada por el cliente desde su celular</small></div></div>
+        <div class="pipe__step"><div class="pipe__dot"><svg class="ic"><use href="#i-invoice"/></svg></div><div><b>Factura automática</b><small>Se genera sola al cerrar la orden y se envía</small></div></div>
+        <div class="pipe__step"><div class="pipe__dot"><svg class="ic"><use href="#i-out"/></svg></div><div><b>Pago y salida</b><small>Cobro en línea, entrega y recordatorio futuro</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 WEBSITE ================= -->
+<section class="site" id="sitio" style="background:#111113">
+  <div class="container">
+    <p class="label rv">02 — El sitio web</p>
+    <h2 class="h2 split">Así se verá <em>tecmeca.com.</em></h2>
+    <p class="sub rv">Una vista previa navegable del diseño propuesto. Elige una página: puedes desplazarte dentro de la pantalla como en el sitio real.</p>
+
+    <div class="show" data-show="site">
+      <div class="show__bar rv">
+        <div class="tabs" role="tablist" aria-label="Páginas del sitio">
+          <button class="tab is-active" type="button" data-view="inicio"><svg class="ic"><use href="#i-globe"/></svg>Inicio</button>
+          <button class="tab" type="button" data-view="servicios"><svg class="ic"><use href="#i-wrench"/></svg>Servicios</button>
+          <button class="tab" type="button" data-view="agenda"><svg class="ic"><use href="#i-cal"/></svg>Agenda tu cita</button>
+          <button class="tab" type="button" data-view="estado"><svg class="ic"><use href="#i-car"/></svg>Estado de mi vehículo</button>
+          <button class="tab" type="button" data-view="contacto"><svg class="ic"><use href="#i-pin"/></svg>Contacto</button>
+        </div>
+        <span class="show__hint"><i></i>Vista previa en vivo</span>
+      </div>
+
+      <div class="show__stage">
+        <div class="browser rv-s">
+          <div class="browser__top"><i></i><i></i><i></i><span class="browser__url"><svg class="ic"><use href="#i-lock"/></svg><span data-url>tecmeca.com</span></span></div>
+          <div class="screen" data-base="1280" data-autoscroll data-cursor="Scroll">
+            <div class="scaler">
+
+              <!-- ======= VIEW: INICIO ======= -->
+              <div class="view is-on" data-view="inicio" data-url="tecmeca.com">
+                <div class="ms">
+                  <div class="ms-topbar"><div><span><svg class="ic"><use href="#i-pin"/></svg>440 N. Bowen Rd. Suite 116, Arlington, TX 76012</span><span><svg class="ic"><use href="#i-clock"/></svg>Lun – Sáb · 8:00 AM – 6:00 PM</span></div><div><span><svg class="ic"><use href="#i-phone"/></svg>(214) 930-7707</span><span><svg class="ic"><use href="#i-phone"/></svg>(469) 882-6826</span></div></div>
+                  <nav class="ms-nav"><span class="ms-logo"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></span><a class="on">Inicio</a><a>Servicios</a><a>Nosotros</a><a>Reseñas</a><a>Estado de mi vehículo</a><a>Contacto</a><span class="ms-lang">ES | EN</span><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span></nav>
+                  <div class="ms-hero">
+                    <div>
+                      <span class="ms-chip"><b><svg class="ic"><use href="#i-bolt"/></svg></b>Especialistas en electricidad automotriz</span>
+                      <h1>Diagnóstico eléctrico de <em>precisión</em> para tu vehículo.</h1>
+                      <p class="lead">Escáner profesional, técnicos especializados y la verdad sobre lo que tiene tu auto. Te explicamos la falla y el precio antes de reparar, en español o en inglés.</p>
+                      <div class="ms-hero__btns"><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar diagnóstico</span><span class="ms-btn ms-btn--wa"><svg><use href="#i-wa"/></svg>Escríbenos</span></div>
+                      <div class="ms-trust">
+                        <div><i><svg class="ic"><use href="#i-cpu"/></svg></i><span><b>Diagnóstico</b>computarizado</span></div>
+                        <div><i><svg class="ic"><use href="#i-dollar"/></svg></i><span><b>Precio claro</b>antes de reparar</span></div>
+                        <div><i><svg class="ic"><use href="#i-globe"/></svg></i><span><b>Español</b>&amp; English</span></div>
+                      </div>
+                    </div>
+                    <div class="ms-visual">
+                      <svg class="ms-gauge" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/><path d="M58 242 A130 130 0 1 1 242 242" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="14" stroke-linecap="round"/><path d="M58 242 A130 130 0 0 1 228 47" fill="none" stroke="#ee3322" stroke-width="14" stroke-linecap="round"/><path d="M146 150 L205 62 L154 154 Z" fill="#fff"/><circle cx="150" cy="150" r="12" fill="#0d0d0f" stroke="#ee3322" stroke-width="4"/></svg>
+                      <div class="ms-visual__img"><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></div>
+                      <div class="ms-hud" style="left:20px; top:30px"><i><svg class="ic"><use href="#i-check"/></svg></i><div><b>Escaneo completo</b><small>48 módulos revisados</small></div></div>
+                      <div class="ms-hud" style="left:-10px; bottom:70px; --d:-2s"><i class="r"><svg class="ic"><use href="#i-battery"/></svg></i><div><b>Batería 12.6 V</b><div class="ms-volt"><span></span><span></span><span></span><span></span><span></span></div></div></div>
+                      <div class="ms-hud" style="right:0; bottom:0; --d:-3.5s"><i class="r"><svg class="ic"><use href="#i-engine"/></svg></i><div><b>P0300 detectado</b><small>Falla de encendido · cil. 3</small></div></div>
+                    </div>
+                  </div>
+                  <div class="ms-brands"><small>Trabajamos todas las marcas</small><span>Toyota</span><span>Ford</span><span>Chevrolet</span><span>Honda</span><span>Nissan</span><span>RAM</span><span>Hyundai</span><span>BMW</span></div>
+                  <div class="ms-sec">
+                    <div class="ms-head"><div><span class="ms-eyebrow">Servicios</span><h2 class="ms-h2">Todo lo eléctrico de tu auto, <em>resuelto.</em></h2></div><p class="ms-sub">Desde una luz encendida en el tablero hasta la programación de módulos. Diagnosticamos con equipo profesional y te explicamos todo antes de reparar.</p></div>
+                    <div class="ms-svc">
+                      <div class="ms-svc__card hot"><i><svg class="ic"><use href="#i-cpu"/></svg></i><h3>Diagnóstico por computadora</h3><p>Escaneo completo de módulos, lectura de códigos y datos en vivo.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-bolt"/></svg></i><h3>Sistema eléctrico y cableado</h3><p>Cortos, fusibles, arneses dañados y consumo parásito.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-battery"/></svg></i><h3>Baterías y alternadores</h3><p>Prueba de carga, reemplazo e instalación en el momento.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-gauge"/></svg></i><h3>Motores de arranque</h3><p>¿Tu auto no enciende? Reparamos o reemplazamos la marcha.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-key"/></svg></i><h3>Módulos y llaves</h3><p>Programación de ECU, módulos y llaves con chip.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-engine"/></svg></i><h3>Check engine</h3><p>Encontramos la causa real de la luz y la apagamos bien.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-light"/></svg></i><h3>Luces e iluminación</h3><p>Faros, direccionales, luces de freno y tablero.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-snow"/></svg></i><h3>A/C eléctrico</h3><p>Compresor, ventiladores, relés y controles del clima.</p><a>Ver más <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+                    </div>
+                  </div>
+                  <div class="ms-sec ms-sec--light">
+                    <div style="text-align:center; margin-bottom:44px"><span class="ms-eyebrow">Cómo trabajamos</span><h2 class="ms-h2">Sin sorpresas, <em>paso a paso.</em></h2></div>
+                    <div class="ms-steps">
+                      <div class="ms-step"><b>1</b><h4>Agenda tu cita</h4><p>En línea, por WhatsApp o por teléfono en menos de un minuto.</p></div>
+                      <div class="ms-step"><b>2</b><h4>Diagnóstico</h4><p>Escaneamos tu vehículo y encontramos la causa exacta.</p></div>
+                      <div class="ms-step"><b>3</b><h4>Apruebas el precio</h4><p>Recibes la cotización en tu celular y decides tú.</p></div>
+                      <div class="ms-step"><b>4</b><h4>Reparación y entrega</h4><p>Te avisamos cuando esté listo y pagas como prefieras.</p></div>
+                    </div>
+                  </div>
+                  <div class="ms-sec">
+                    <div class="ms-track">
+                      <div><span class="ms-eyebrow">Exclusivo de Tecmeca</span><h2 class="ms-h2">Sigue tu reparación <em>en tiempo real.</em></h2><p class="ms-sub" style="margin-bottom:24px">Con tu número de orden ves en qué etapa está tu vehículo, las fotos del diagnóstico y la cotización para aprobarla desde el celular.</p><span class="ms-btn ms-btn--white"><svg class="ic"><use href="#i-search"/></svg>Consultar mi vehículo</span></div>
+                      <div class="ms-track__card">
+                        <div class="ms-track__top"><div><b>Ford F-150 · 2017</b><small>Orden #TM-1042 · Luis R.</small></div><span class="ms-status"><i></i>En reparación</span></div>
+                        <div class="ms-stepper">
+                          <div class="ok"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Vehículo recibido</span><small>8:12 AM</small></div>
+                          <div class="ok"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Diagnóstico completado</span><small>9:40 AM</small></div>
+                          <div class="ok"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Cotización aprobada</span><small>10:05 AM</small></div>
+                          <div class="now"><span class="dot"><svg class="ic"><use href="#i-wrench"/></svg></span><span>Reemplazo de motor de arranque</span><small>En curso</small></div>
+                          <div><span class="dot"><svg class="ic"><use href="#i-car"/></svg></span><span>Listo para entrega</span><small>~ 2:00 PM</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ms-sec ms-sec--alt">
+                    <div class="ms-head"><div><span class="ms-eyebrow">Por qué Tecmeca</span><h2 class="ms-h2">Ingeniería, <em>no adivinanzas.</em></h2></div></div>
+                    <div class="ms-why">
+                      <div><b>ES/EN</b><span>Te atendemos en tu idioma, de principio a fin.</span></div>
+                      <div><b>100%</b><span>Diagnóstico con escáner profesional antes de tocar tu auto.</span></div>
+                      <div><b>$ claro</b><span>Cotización por escrito que apruebas desde tu celular.</span></div>
+                      <div><b>Fotos</b><span>Ves lo que encontramos: evidencia de cada falla.</span></div>
+                    </div>
+                  </div>
+                  <div class="ms-sec ms-sec--light">
+                    <div class="ms-head"><div><span class="ms-eyebrow">Reseñas</span><h2 class="ms-h2">Lo que dicen <em>nuestros clientes.</em></h2></div><span class="ms-btn ms-btn--white" style="border:1px solid rgba(0,0,0,.15)"><svg class="ic"><use href="#i-star"/></svg>Ver en Google</span></div>
+                    <div class="ms-reviews">
+                      <div class="ms-review"><div class="ms-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><p>“Otros talleres solo cambiaban piezas. Aquí encontraron el corto en el arnés en una hora. Honestos y rápidos.”</p><footer><i>M</i><span><b>María G.</b>Toyota Camry</span></footer></div>
+                      <div class="ms-review"><div class="ms-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><p>“Me mandaron fotos y el precio por WhatsApp antes de reparar. Pagué desde el celular y recogí mi troca lista.”</p><footer><i>L</i><span><b>Luis R.</b>Ford F-150</span></footer></div>
+                      <div class="ms-review"><div class="ms-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><p>“Great service in English too. They programmed a new key for my Altima the same day. Highly recommend.”</p><footer><i>A</i><span><b>Ashley J.</b>Nissan Altima</span></footer></div>
+                    </div>
+                  </div>
+                  <div class="ms-sec" style="padding-bottom:40px"><div class="ms-cta" style="margin:0"><h2>¿Se encendió el check engine? Agenda tu diagnóstico hoy.</h2><div><span class="ms-btn ms-btn--white"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span><span class="ms-btn ms-btn--ghost"><svg class="ic"><use href="#i-phone"/></svg>(214) 930-7707</span></div></div></div>
+                  <footer class="ms-foot">
+                    <div class="ms-foot__grid">
+                      <div><svg viewBox="0 0 330 84" style="height:50px; width:auto; color:#fff"><use href="#logo-mini"/></svg><p>Diagnóstico y reparación eléctrica automotriz en Arlington, Texas.</p></div>
+                      <div><h4>Servicios</h4><ul><li>Diagnóstico</li><li>Sistema eléctrico</li><li>Baterías y alternadores</li><li>Módulos y llaves</li></ul></div>
+                      <div><h4>Tecmeca</h4><ul><li>Nosotros</li><li>Reseñas</li><li>Estado de mi vehículo</li><li>Agendar cita</li></ul></div>
+                      <div><h4>Contacto</h4><ul><li>(214) 930-7707 · Jesús</li><li>(469) 882-6826 · Euclides</li><li>440 N. Bowen Rd. Ste 116</li><li>Arlington, TX 76012</li></ul></div>
+                    </div>
+                    <div class="ms-foot__row"><span>© 2026 Tecmeca Auto Electrical Engineering</span><span>Sitio web por DGP Global Group</span></div>
+                  </footer>
+                </div>
+              </div>
+
+              <!-- ======= VIEW: SERVICIOS ======= -->
+              <div class="view" data-view="servicios" data-url="tecmeca.com/servicios">
+                <div class="ms">
+                  <nav class="ms-nav"><span class="ms-logo"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></span><a>Inicio</a><a class="on">Servicios</a><a>Nosotros</a><a>Reseñas</a><a>Estado de mi vehículo</a><a>Contacto</a><span class="ms-lang">ES | EN</span><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span></nav>
+                  <div class="ms-phero"><div class="ms-crumb">Inicio / <b>Servicios</b></div><h1>Servicios eléctricos <em>automotrices.</em></h1><p>Cada servicio tiene su propia página con lo que incluye, señales de falla y preguntas frecuentes, pensada para aparecer en Google cuando alguien busca ese problema en Arlington.</p></div>
+                  <div class="ms-svcd">
+                    <div class="ms-svcd__list">
+                      <a class="on"><i><svg class="ic"><use href="#i-cpu"/></svg></i>Diagnóstico por computadora</a>
+                      <a><i><svg class="ic"><use href="#i-bolt"/></svg></i>Sistema eléctrico y cableado</a>
+                      <a><i><svg class="ic"><use href="#i-battery"/></svg></i>Baterías y alternadores</a>
+                      <a><i><svg class="ic"><use href="#i-gauge"/></svg></i>Motores de arranque</a>
+                      <a><i><svg class="ic"><use href="#i-key"/></svg></i>Módulos y llaves</a>
+                      <a><i><svg class="ic"><use href="#i-engine"/></svg></i>Check engine</a>
+                      <a><i><svg class="ic"><use href="#i-light"/></svg></i>Luces e iluminación</a>
+                      <a><i><svg class="ic"><use href="#i-snow"/></svg></i>A/C eléctrico</a>
+                    </div>
+                    <div class="ms-svcd__main">
+                      <div>
+                        <span class="ms-eyebrow">Servicio destacado</span>
+                        <h2>Diagnóstico por computadora</h2>
+                        <p>Conectamos un escáner profesional a tu vehículo para leer todos los módulos: motor, transmisión, frenos ABS, bolsas de aire, carrocería y más. Te entregamos un reporte claro con la causa de la falla.</p>
+                        <ul>
+                          <li><svg class="ic"><use href="#i-check"/></svg>Lectura y borrado de códigos de falla (DTC)</li>
+                          <li><svg class="ic"><use href="#i-check"/></svg>Datos en vivo de sensores y actuadores</li>
+                          <li><svg class="ic"><use href="#i-check"/></svg>Prueba de batería, carga y arranque</li>
+                          <li><svg class="ic"><use href="#i-check"/></svg>Reporte con fotos enviado a tu celular</li>
+                        </ul>
+                        <div style="display:flex; gap:10px"><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar este servicio</span><span class="ms-btn ms-btn--wa"><svg><use href="#i-wa"/></svg>Preguntar</span></div>
+                      </div>
+                      <div class="ms-svcd__img"><img src="../assets/diagnostico.webp" alt="" loading="lazy" />
+                        <div class="ms-scanbox"><div><span>SCAN · TOYOTA CAMRY 2019</span><span>OK</span></div><div><span>ECM · Motor</span><span>1 código</span></div><div class="err"><span>P0303 · Falla cil. 3</span><span>ACTIVO</span></div><div><span>TCM · Transmisión</span><span>OK</span></div><div><span>ABS · Frenos</span><span>OK</span></div></div>
+                      </div>
+                      <div class="ms-faq">
+                        <div>¿Cuánto tarda un diagnóstico? <b>+</b></div><div>¿El check engine puede esperar? <b>+</b></div>
+                        <div>¿Trabajan con todas las marcas? <b>+</b></div><div>¿Me dan el reporte por escrito? <b>+</b></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ms-sec ms-sec--alt" style="padding-top:50px">
+                    <div class="ms-head"><div><span class="ms-eyebrow">Señales de alerta</span><h2 class="ms-h2">¿Tu auto tiene <em>alguno de estos síntomas?</em></h2></div></div>
+                    <div class="ms-svc">
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-engine"/></svg></i><h3>Luz de check engine</h3><p>Encendida fija o parpadeando.</p></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-battery"/></svg></i><h3>Batería que se descarga</h3><p>Amanece sin carga aunque sea nueva.</p></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-gauge"/></svg></i><h3>No arranca o tarda</h3><p>Hace clic pero el motor no gira.</p></div>
+                      <div class="ms-svc__card"><i><svg class="ic"><use href="#i-light"/></svg></i><h3>Luces que fallan</h3><p>Parpadean, bajan de intensidad o no encienden.</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======= VIEW: AGENDA ======= -->
+              <div class="view" data-view="agenda" data-url="tecmeca.com/agendar">
+                <div class="ms">
+                  <nav class="ms-nav"><span class="ms-logo"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></span><a>Inicio</a><a>Servicios</a><a>Nosotros</a><a>Reseñas</a><a>Estado de mi vehículo</a><a>Contacto</a><span class="ms-lang">ES | EN</span><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span></nav>
+                  <div class="ms-phero" style="padding:40px 48px 34px"><div class="ms-crumb">Inicio / <b>Agendar cita</b></div><h1>Agenda tu cita <em>en 1 minuto.</em></h1></div>
+                  <div class="ms-book">
+                    <div>
+                      <div class="ms-wizard"><div class="ok"><b>✓</b>Tu vehículo</div><div class="ok"><b>✓</b>Servicio</div><div class="now"><b>3</b>Fecha y hora</div><div><b>4</b>Tus datos</div></div>
+                      <div class="ms-two">
+                        <div class="ms-panel">
+                          <h3>Noviembre 2026 <small>Solo se muestran días con cupo</small></h3>
+                          <div class="ms-cal">
+                            <span class="h">LU</span><span class="h">MA</span><span class="h">MI</span><span class="h">JU</span><span class="h">VI</span><span class="h">SA</span><span class="h">DO</span>
+                            <span class="off">26</span><span class="off">27</span><span class="off">28</span><span class="off">29</span><span class="off">30</span><span class="off">31</span><span class="off">1</span>
+                            <span class="av today">2</span><span class="av">3</span><span class="sel">4</span><span class="av">5</span><span class="av">6</span><span class="av">7</span><span class="off">8</span>
+                            <span class="av">9</span><span class="av">10</span><span class="av">11</span><span class="av">12</span><span class="av">13</span><span class="av">14</span><span class="off">15</span>
+                            <span class="av">16</span><span class="av">17</span><span class="av">18</span><span class="av">19</span><span class="av">20</span><span class="av">21</span><span class="off">22</span>
+                          </div>
+                          <div class="ms-slots"><span class="x">8:00</span><span>8:30</span><span class="sel">9:30</span><span>10:00</span><span class="x">11:00</span><span>12:30</span><span>2:00</span><span>3:30</span></div>
+                        </div>
+                        <div class="ms-panel">
+                          <h3>¿Qué necesita tu auto?</h3>
+                          <div class="ms-svcpick">
+                            <span class="on"><i></i>Diagnóstico check engine</span>
+                            <span><i></i>Batería / alternador</span>
+                            <span><i></i>No arranca</span>
+                            <span class="on"><i></i>Luces del tablero</span>
+                            <span><i></i>Programar llave</span>
+                            <span><i></i>Otro (descríbelo)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <aside class="ms-sum">
+                      <h3>Resumen de tu cita</h3>
+                      <div class="ms-sum__car"><i><svg class="ic"><use href="#i-car"/></svg></i><div><b>Toyota Camry 2019</b><small>Placa · TX 8KL-2291</small></div></div>
+                      <dl>
+                        <div><dt>Servicio</dt><dd>Diagnóstico check engine</dd></div>
+                        <div><dt>Adicional</dt><dd>Luces del tablero</dd></div>
+                        <div><dt>Fecha</dt><dd>Miércoles 4 de nov.</dd></div>
+                        <div><dt>Hora</dt><dd>9:30 AM</dd></div>
+                        <div><dt>Técnico</dt><dd>Jesús Méndez</dd></div>
+                      </dl>
+                      <span class="ms-btn">Confirmar cita <svg class="ic"><use href="#i-arrow"/></svg></span>
+                      <div class="ms-sum__note"><svg class="ic"><use href="#i-wa"/></svg>Te confirmamos por WhatsApp y te recordamos un día antes.</div>
+                    </aside>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======= VIEW: ESTADO ======= -->
+              <div class="view" data-view="estado" data-url="tecmeca.com/estado/TM-1051">
+                <div class="ms">
+                  <nav class="ms-nav"><span class="ms-logo"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></span><a>Inicio</a><a>Servicios</a><a>Nosotros</a><a>Reseñas</a><a class="on">Estado de mi vehículo</a><a>Contacto</a><span class="ms-lang">ES | EN</span><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span></nav>
+                  <div class="ms-portal">
+                    <div>
+                      <div class="ms-search"><span class="ms-input">TM-1051</span><span class="ms-btn"><svg class="ic"><use href="#i-search"/></svg>Consultar</span></div>
+                      <div class="ms-panel">
+                        <h3>Toyota Camry 2019 · María González <span class="ms-status"><i></i>Esperando tu aprobación</span></h3>
+                        <div class="ms-prog">
+                          <div class="ok"><b><svg class="ic"><use href="#i-in"/></svg></b>Recibido</div>
+                          <div class="ok"><b><svg class="ic"><use href="#i-cpu"/></svg></b>Diagnóstico</div>
+                          <div class="now"><b><svg class="ic"><use href="#i-dollar"/></svg></b>Aprobación</div>
+                          <div><b><svg class="ic"><use href="#i-wrench"/></svg></b>Reparación</div>
+                          <div><b><svg class="ic"><use href="#i-shield"/></svg></b>Calidad</div>
+                          <div><b><svg class="ic"><use href="#i-car"/></svg></b>Listo</div>
+                        </div>
+                        <div class="ms-note"><i>JM</i><div><small>Nota del técnico · Jesús Méndez · 10:42 AM</small>Encontramos falla en la bobina del cilindro 3 (código P0303) y bujías desgastadas. Te dejamos las fotos y la cotización para que la apruebes.</div></div>
+                        <div class="ms-photos"><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></span><span>+3 fotos<br />del motor</span></div>
+                      </div>
+                    </div>
+                    <div class="ms-est">
+                      <h3>Cotización #C-1051 <small>LISTA</small></h3>
+                      <table>
+                        <tr><td>Diagnóstico computarizado<small>Mano de obra · 1 h</small></td><td>$95.00</td></tr>
+                        <tr><td>Bobina de encendido · cil. 3<small>Pieza OEM</small></td><td>$78.00</td></tr>
+                        <tr><td>Bujías de iridio (4)<small>Pieza</small></td><td>$64.00</td></tr>
+                        <tr><td>Instalación<small>Mano de obra · 1.2 h</small></td><td>$114.00</td></tr>
+                        <tfoot>
+                          <tr><td>Impuesto (8.25% piezas)</td><td>$11.72</td></tr>
+                          <tr><td>Total</td><td>$362.72</td></tr>
+                        </tfoot>
+                      </table>
+                      <div class="ms-est__btns"><span class="ms-btn ms-btn--ghost">Tengo dudas</span><span class="ms-btn">Aprobar</span></div>
+                      <div class="ms-paylogos"><span>Visa</span><span>Mastercard</span><span>Zelle</span><span>Cash App</span><span>Efectivo</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======= VIEW: CONTACTO ======= -->
+              <div class="view" data-view="contacto" data-url="tecmeca.com/contacto">
+                <div class="ms">
+                  <nav class="ms-nav"><span class="ms-logo"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></span><a>Inicio</a><a>Servicios</a><a>Nosotros</a><a>Reseñas</a><a>Estado de mi vehículo</a><a class="on">Contacto</a><span class="ms-lang">ES | EN</span><span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar cita</span></nav>
+                  <div class="ms-phero" style="padding:40px 48px 34px"><div class="ms-crumb">Inicio / <b>Contacto</b></div><h1>Visítanos en <em>Arlington.</em></h1></div>
+                  <div class="ms-sec" style="padding-top:34px">
+                    <div class="ms-contact">
+                      <div class="ms-map">
+                        <svg class="streets" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice">
+                          <rect width="600" height="420" fill="#17171a"/>
+                          <g stroke="#232327" stroke-width="10"><path d="M0 70 H600M0 150 H600M0 300 H600M0 370 H600M90 0 V420M200 0 V420M420 0 V420M520 0 V420"/></g>
+                          <g fill="#1e2a20"><rect x="215" y="310" width="190" height="50" rx="6"/><rect x="430" y="80" width="80" height="60" rx="6"/></g>
+                          <path d="M0 225 H600" stroke="#3a3a40" stroke-width="22"/><path d="M0 225 H600" stroke="#55555c" stroke-width="2" stroke-dasharray="14 12"/>
+                          <path d="M312 0 V420" stroke="#3a3a40" stroke-width="18"/>
+                          <path d="M0 22 C200 30 400 10 600 26" stroke="#4a3a1e" stroke-width="16" fill="none"/>
+                          <path d="M312 420 V225 H600" stroke="#ee3322" stroke-width="5" fill="none" stroke-dasharray="10 8" opacity=".85"/>
+                          <g font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8b8b8f"><text x="20" y="218">W Division St</text><text x="322" y="400" transform="rotate(-90 322 400)">N Bowen Rd</text><text x="20" y="16">I-30</text></g>
+                        </svg>
+                        <div class="ms-pin"><b>Tecmeca · Suite 116</b><i></i></div>
+                      </div>
+                      <div class="ms-cinfo">
+                        <div class="ms-cinfo__row"><i><svg class="ic"><use href="#i-pin"/></svg></i><div><small>Dirección</small><b>440 N. Bowen Rd. Suite 116, Arlington, TX 76012</b></div></div>
+                        <div class="ms-cinfo__row"><i><svg class="ic"><use href="#i-phone"/></svg></i><div><small>Jesús Méndez</small><b>(214) 930-7707</b></div><span class="ms-btn ms-btn--wa ms-btn--sm"><svg><use href="#i-wa"/></svg>WhatsApp</span></div>
+                        <div class="ms-cinfo__row"><i><svg class="ic"><use href="#i-phone"/></svg></i><div><small>Euclides Montero</small><b>(469) 882-6826</b></div><span class="ms-btn ms-btn--wa ms-btn--sm"><svg><use href="#i-wa"/></svg>WhatsApp</span></div>
+                        <div class="ms-form">
+                          <span class="ms-input filled">Carlos Pérez</span><span class="ms-input filled">(817) 555-0142</span>
+                          <span class="ms-input full filled">Chevrolet Silverado 2015</span>
+                          <span class="ms-input full area filled">La batería es nueva pero el auto amanece descargado…</span>
+                          <span class="ms-btn" style="grid-column:1/-1; justify-content:center">Enviar mensaje <svg class="ic"><use href="#i-arrow"/></svg></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="ms-foot"><div class="ms-foot__row"><span>© 2026 Tecmeca Auto Electrical Engineering</span><span>Sitio web por DGP Global Group</span></div></footer>
+                  <span class="ms-fab"><svg><use href="#i-wa"/></svg></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- phone -->
+        <div class="rv" style="--d:.15s">
+          <div class="phone">
+            <div class="phone__screen" data-base="390" data-autoscroll>
+              <div class="phone__scaler">
+                <div class="mm">
+                  <div class="mm-status"></div>
+                  <div class="mm-nav"><svg class="logo" viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg><span class="mm-burger"><i></i><i></i><i></i></span></div>
+                  <div class="mm-hero">
+                    <span class="ms-chip"><b><svg class="ic"><use href="#i-bolt"/></svg></b>Electricidad automotriz</span>
+                    <h1>Diagnóstico de <em>precisión.</em></h1>
+                    <p>Escáner profesional y precio claro antes de reparar. En español o inglés.</p>
+                    <span class="ms-btn"><svg class="ic"><use href="#i-cal"/></svg>Agendar diagnóstico</span>
+                    <span class="ms-btn ms-btn--wa"><svg><use href="#i-wa"/></svg>Escríbenos por WhatsApp</span>
+                  </div>
+                  <div class="mm-img"><img src="../assets/diagnostico.webp" alt="" loading="lazy" /><div class="ms-hud"><i><svg class="ic"><use href="#i-check"/></svg></i><div><b>Escaneo completo</b><small>48 módulos</small></div></div></div>
+                  <div class="mm-sec">
+                    <h2>Nuestros <em>servicios</em></h2>
+                    <div class="mm-list">
+                      <div><i><svg class="ic"><use href="#i-cpu"/></svg></i><span><b>Diagnóstico computarizado</b><small>Códigos y datos en vivo</small></span></div>
+                      <div><i><svg class="ic"><use href="#i-bolt"/></svg></i><span><b>Sistema eléctrico</b><small>Cortos, fusibles y arneses</small></span></div>
+                      <div><i><svg class="ic"><use href="#i-battery"/></svg></i><span><b>Baterías y alternadores</b><small>Prueba de carga y reemplazo</small></span></div>
+                      <div><i><svg class="ic"><use href="#i-gauge"/></svg></i><span><b>Motores de arranque</b><small>Reparación y reemplazo</small></span></div>
+                      <div><i><svg class="ic"><use href="#i-key"/></svg></i><span><b>Módulos y llaves</b><small>Programación con chip</small></span></div>
+                      <div><i><svg class="ic"><use href="#i-engine"/></svg></i><span><b>Check engine</b><small>Causa real de la falla</small></span></div>
+                    </div>
+                  </div>
+                  <div class="mm-track">
+                    <div class="ms-track__top"><div><b style="font-size:16px">F-150 · #TM-1042</b><small>Estado de tu vehículo</small></div><span class="ms-status"><i></i>En reparación</span></div>
+                    <div class="ms-stepper">
+                      <div class="ok"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Recibido</span><small>8:12</small></div>
+                      <div class="ok"><span class="dot"><svg class="ic"><use href="#i-check"/></svg></span><span>Diagnóstico</span><small>9:40</small></div>
+                      <div class="now"><span class="dot"><svg class="ic"><use href="#i-wrench"/></svg></span><span>Reparación</span><small>Ahora</small></div>
+                      <div><span class="dot"><svg class="ic"><use href="#i-car"/></svg></span><span>Listo</span><small>2:00</small></div>
+                    </div>
+                  </div>
+                  <div class="mm-cta"><h3>¿Check engine encendido?</h3><span class="ms-btn ms-btn--white"><svg class="ic"><use href="#i-cal"/></svg>Agenda hoy</span></div>
+                  <div class="mm-sec"><h2>Visítanos</h2><div class="mm-list"><div><i><svg class="ic"><use href="#i-pin"/></svg></i><span><b>440 N. Bowen Rd. Ste 116</b><small>Arlington, TX 76012</small></span></div><div><i><svg class="ic"><use href="#i-phone"/></svg></i><span><b>(214) 930-7707</b><small>Jesús Méndez</small></span></div><div><i><svg class="ic"><use href="#i-phone"/></svg></i><span><b>(469) 882-6826</b><small>Euclides Montero</small></span></div></div></div>
+                  <div class="mm-foot">© 2026 Tecmeca · Sitio por DGP Global Group</div>
+                  <div class="mm-dock"><span><svg class="ic"><use href="#i-phone"/></svg>Llamar</span><span><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</span><span><svg class="ic"><use href="#i-cal"/></svg>Agendar</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="phone__cap">Versión móvil</p>
+        </div>
+      </div>
+      <p class="show__note">Textos, reseñas y datos son de ejemplo para mostrar el diseño. El sitio final usará fotos, horarios y contenido reales de Tecmeca.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 INCLUDES ================= -->
+<section class="light" id="incluye">
+  <div class="container">
+    <p class="label rv">03 — Qué incluye el sitio web</p>
+    <h2 class="h2 split">Todo para que el teléfono <em>no deje de sonar.</em></h2>
+    <p class="sub rv">Diseño, desarrollo y publicación completos. Sin plantillas genéricas: hecho a la medida con la imagen de Tecmeca.</p>
+    <div class="inc__grid">
+      <article class="inc__item rv" data-tilt><b>01</b><i><svg class="ic"><use href="#i-bolt"/></svg></i><h3>Diseño a la medida</h3><p>Rojo, negro y gris de Tecmeca, tipografía deportiva y animaciones de alto impacto.</p></article>
+      <article class="inc__item rv" style="--d:.05s" data-tilt><b>02</b><i><svg class="ic"><use href="#i-globe"/></svg></i><h3>Bilingüe ES / EN</h3><p>Todo el sitio en español e inglés con un botón para cambiar de idioma.</p></article>
+      <article class="inc__item rv" style="--d:.1s" data-tilt><b>03</b><i><svg class="ic"><use href="#i-cal"/></svg></i><h3>Agenda en línea</h3><p>El cliente elige servicio, día y hora; la cita entra directo al CRM.</p></article>
+      <article class="inc__item rv" style="--d:.15s" data-tilt><b>04</b><i><svg class="ic"><use href="#i-car"/></svg></i><h3>Estado de mi vehículo</h3><p>Portal donde el cliente sigue su reparación, ve fotos y aprueba la cotización.</p></article>
+      <article class="inc__item rv" data-tilt><b>05</b><i><svg class="ic"><use href="#i-wrench"/></svg></i><h3>Página por servicio</h3><p>8 servicios con su propia página, síntomas y preguntas frecuentes.</p></article>
+      <article class="inc__item rv" style="--d:.05s" data-tilt><b>06</b><i><svg class="ic"><use href="#i-wa"/></svg></i><h3>WhatsApp y llamadas</h3><p>Botón flotante de WhatsApp y teléfonos de Jesús y Euclides a un toque.</p></article>
+      <article class="inc__item rv" style="--d:.1s" data-tilt><b>07</b><i><svg class="ic"><use href="#i-pin"/></svg></i><h3>SEO local + Google</h3><p>Optimizado para “taller eléctrico en Arlington”, datos estructurados y mapa.</p></article>
+      <article class="inc__item rv" style="--d:.15s" data-tilt><b>08</b><i><svg class="ic"><use href="#i-mobile"/></svg></i><h3>Perfecto en celular</h3><p>Diseñado primero para el móvil, con barra fija de Llamar · WhatsApp · Agendar.</p></article>
+      <article class="inc__item rv" data-tilt><b>09</b><i><svg class="ic"><use href="#i-star"/></svg></i><h3>Reseñas</h3><p>Sección de testimonios y enlace para dejar reseñas en Google.</p></article>
+      <article class="inc__item rv" style="--d:.05s" data-tilt><b>10</b><i><svg class="ic"><use href="#i-rocket"/></svg></i><h3>Carga ultrarrápida</h3><p>Imágenes optimizadas y código ligero para abrir rápido con datos móviles.</p></article>
+      <article class="inc__item rv" style="--d:.1s" data-tilt><b>11</b><i><svg class="ic"><use href="#i-lock"/></svg></i><h3>Seguro (https)</h3><p>Certificado SSL, formularios protegidos y copias de seguridad.</p></article>
+      <article class="inc__item rv" style="--d:.15s" data-tilt><b>12</b><i><svg class="ic"><use href="#i-chart"/></svg></i><h3>Analítica</h3><p>Google Analytics para saber cuántos te visitan, llaman y agendan.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="marquee marquee--alt" aria-hidden="true"><div class="marquee__track">
+  <span>Control total del taller</span><span>Cero papeles</span><span>Facturas automáticas</span><span>Clientes avisados por WhatsApp</span><span>Cada dólar registrado</span>
+  <span>Control total del taller</span><span>Cero papeles</span><span>Facturas automáticas</span><span>Clientes avisados por WhatsApp</span><span>Cada dólar registrado</span>
+</div></div>
+
+<!-- ================= 04 CRM ================= -->
+<section class="crm" id="crm">
+  <div class="container">
+    <div class="crm__head">
+      <div>
+        <p class="label rv">04 — Panel CRM del taller</p>
+        <h2 class="h2 split">El control total <em>de Tecmeca</em> en una pantalla.</h2>
+        <p class="sub rv">Un sistema hecho a la medida de un taller eléctrico automotriz. Desde la llamada o la cita web, hasta la entrada del auto, la orden de trabajo, la factura, el pago y la salida. Todo queda registrado, con usuarios para cada miembro del equipo.</p>
+      </div>
+      <div class="badge-price rv" style="--d:.2s"><small>Valor regular del CRM</small><strong><s>$997</s>Incluido</strong><span>en el paquete de $865</span></div>
+    </div>
+
+    <div class="show" data-show="crm">
+      <div class="show__bar rv">
+        <div class="tabs" role="tablist" aria-label="Módulos del CRM">
+          <button class="tab is-active" type="button" data-view="resumen"><svg class="ic"><use href="#i-grid"/></svg>Resumen</button>
+          <button class="tab" type="button" data-view="entradas"><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas</button>
+          <button class="tab" type="button" data-view="ordenes"><svg class="ic"><use href="#i-kanban"/></svg>Órdenes</button>
+          <button class="tab" type="button" data-view="clientes"><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</button>
+          <button class="tab" type="button" data-view="facturas"><svg class="ic"><use href="#i-invoice"/></svg>Facturación</button>
+          <button class="tab" type="button" data-view="pagos"><svg class="ic"><use href="#i-card"/></svg>Pagos</button>
+          <button class="tab" type="button" data-view="callcenter"><svg class="ic"><use href="#i-headset"/></svg>Call center</button>
+          <button class="tab" type="button" data-view="agendacrm"><svg class="ic"><use href="#i-cal"/></svg>Agenda</button>
+          <button class="tab" type="button" data-view="inventario"><svg class="ic"><use href="#i-box"/></svg>Inventario</button>
+          <button class="tab" type="button" data-view="reportes"><svg class="ic"><use href="#i-chart"/></svg>Reportes</button>
+        </div>
+      </div>
+
+      <div class="show__crmrow">
+        <div class="browser rv-s">
+          <div class="browser__top"><i></i><i></i><i></i><span class="browser__url"><svg class="ic"><use href="#i-lock"/></svg><span data-url>panel.tecmeca.com</span></span></div>
+          <div class="screen screen--crm is-anim" data-base="1280" data-cursor="Scroll">
+            <div class="scaler">
+
+              <!-- CRM shell is repeated per view so each module is a full screen -->
+              <!-- ===== RESUMEN ===== -->
+              <div class="view is-on" data-view="resumen" data-url="panel.tecmeca.com/resumen">
+                <div class="cr" style="position:relative">
+                  <aside class="cr-side">
+                    <div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div>
+                    <small>Taller</small>
+                    <a class="on"><svg class="ic"><use href="#i-grid"/></svg>Resumen</a>
+                    <a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a>
+                    <a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a>
+                    <a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a>
+                    <a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a>
+                    <small>Dinero</small>
+                    <a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a>
+                    <a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a>
+                    <small>Comunicación</small>
+                    <a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a>
+                    <a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a>
+                    <small>Gestión</small>
+                    <a><svg class="ic"><use href="#i-box"/></svg>Inventario</a>
+                    <a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a>
+                    <div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div>
+                  </aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Buenos días, Jesús <small>Miércoles 4 de noviembre</small></h2><span class="cr-search"><svg class="ic"><use href="#i-search"/></svg>Buscar placa, VIN, cliente u orden…<kbd>⌘K</kbd></span><span class="cr-iconbtn"><svg class="ic"><use href="#i-bell"/></svg><em></em></span><span class="cr-btn"><svg class="ic"><use href="#i-in"/></svg>Nueva entrada</span></div>
+                    <div class="cr-body">
+                      <div class="cr-kpis">
+                        <div class="cr-kpi cr-kpi--dark"><i><svg class="ic"><use href="#i-car"/></svg></i><small>Autos en el taller</small><b data-count="14">0</b><span>6 bahías ocupadas</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-in"/></svg></i><small>Entradas hoy</small><b data-count="6">0</b><span>+2 vs. ayer</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-out"/></svg></i><small>Listos para entrega</small><b data-count="4">0</b><span>3 ya avisados</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-dollar"/></svg></i><small>Facturado hoy</small><b data-count="3240" data-prefix="$">0</b><span>+18% semana</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-card"/></svg></i><small>Por cobrar</small><b data-count="1180" data-prefix="$">0</b><span class="dn">3 facturas</span></div>
+                      </div>
+                      <div class="cr-g21">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Ingresos de la semana</h3><small>Mano de obra ■ · Piezas ■</small></div>
+                          <div class="cr-bars">
+                            <div style="--i:0"><span style="--h:52%"></span>Jue</div><div style="--i:1"><span style="--h:68%"></span>Vie</div><div style="--i:2"><span style="--h:80%"></span>Sáb</div><div style="--i:3"><span style="--h:20%"></span>Dom</div><div style="--i:4"><span style="--h:61%"></span>Lun</div><div style="--i:5"><span style="--h:74%"></span>Mar</div><div class="today" style="--i:6"><span style="--h:92%"></span>Hoy</div>
+                          </div>
+                        </div>
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Bahías</h3><small>En vivo</small></div>
+                          <div class="cr-bays">
+                            <div class="cr-bay"><small>B1</small><b>F-150 · Luis R.</b><em style="--p:70%"></em></div>
+                            <div class="cr-bay"><small>B2</small><b>Camry · María G.</b><em style="--p:35%"></em></div>
+                            <div class="cr-bay"><small>B3</small><b>Silverado · Carlos</b><em style="--p:85%"></em></div>
+                            <div class="cr-bay"><small>B4</small><b>Altima · José H.</b><em style="--p:20%"></em></div>
+                            <div class="cr-bay"><small>B5</small><b>RAM 1500 · Daniel</b><em style="--p:55%"></em></div>
+                            <div class="cr-bay free"><small>B6</small><b>Disponible</b><em style="--p:0%"></em></div>
+                          </div>
+                          <div class="cr-alert"><svg class="ic"><use href="#i-clock"/></svg>Camry lleva 2 h esperando aprobación del cliente</div>
+                        </div>
+                      </div>
+                      <div class="cr-g3">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Citas de hoy</h3><a>Ver agenda</a></div>
+                          <div class="cr-list">
+                            <div class="cr-li"><span class="cr-time">9:30</span><div><b>Ana Morales · Tucson 2021</b><small>Batería se descarga · desde la web</small></div><span class="cr-pill p-green">Llegó</span></div>
+                            <div class="cr-li"><span class="cr-time">11:00</span><div><b>Kevin Smith · BMW 328i</b><small>Módulo de ventanas · llamada</small></div><span class="cr-pill p-blue">Confirmada</span></div>
+                            <div class="cr-li"><span class="cr-time">2:00</span><div><b>Rosa Díaz · Odyssey 2012</b><small>A/C eléctrico · WhatsApp</small></div><span class="cr-pill p-amber">Por confirmar</span></div>
+                          </div>
+                        </div>
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Call center hoy</h3><a>Abrir</a></div>
+                          <div class="cr-list">
+                            <div class="cr-li"><span class="cr-dir in"><svg class="ic"><use href="#i-phone"/></svg></span><div><b>23 llamadas atendidas</b><small>Promedio 3:12 min</small></div><span class="cr-pill p-green">92%</span></div>
+                            <div class="cr-li"><span class="cr-dir miss"><svg class="ic"><use href="#i-phone"/></svg></span><div><b>2 perdidas</b><small>Devolver antes de las 12</small></div><span class="cr-pill p-red">Pendiente</span></div>
+                            <div class="cr-li"><span class="cr-dir out"><svg class="ic"><use href="#i-msg"/></svg></span><div><b>31 mensajes enviados</b><small>Avisos automáticos</small></div><span class="cr-pill p-grey">Auto</span></div>
+                          </div>
+                        </div>
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Alertas</h3></div>
+                          <div class="cr-alert r"><svg class="ic"><use href="#i-box"/></svg>Stock bajo: alternador Bosch AL-6420 (1)</div>
+                          <div class="cr-alert"><svg class="ic"><use href="#i-invoice"/></svg>Factura #0409 vence mañana · $420</div>
+                          <div class="cr-alert"><svg class="ic"><use href="#i-refresh"/></svg>12 clientes para recordatorio de mantenimiento</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cr-toast"><i><svg class="ic"><use href="#i-cal"/></svg></i><div><b>Nueva cita desde la web</b><small>Mike Brown · Jeep Wrangler · Jue 10:00</small></div></div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Resumen del taller</h3>
+                  <p>Al abrir el panel ves el pulso del negocio en tiempo real: qué autos hay, qué bahía ocupan, cuánto se facturó y qué está pendiente.</p>
+                  <ul class="ticks"><li>Autos en el taller, entradas y salidas del día</li><li>Ocupación de bahías con avance de cada trabajo</li><li>Facturado hoy, por cobrar y gráfica semanal</li><li>Citas del día y su origen (web, llamada, WhatsApp)</li><li>Alertas: stock bajo, facturas por vencer, clientes esperando</li><li>Notificación instantánea de cada cita nueva</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== ENTRADAS ===== -->
+              <div class="view" data-view="entradas" data-url="panel.tecmeca.com/entradas/nueva">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a class="on"><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>EM</i><div><b>Euclides Montero</b><small>Recepción</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Entrada de vehículo <small>Orden #TM-1055 · 9:34 AM</small></h2><span class="cr-btn cr-btn--ghost"><svg class="ic"><use href="#i-print"/></svg>Imprimir recibo</span><span class="cr-btn cr-btn--green"><svg class="ic"><use href="#i-check"/></svg>Registrar entrada</span></div>
+                    <div class="cr-body">
+                      <div class="cr-in">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3><svg class="ic"><use href="#i-car"/></svg>Vehículo y cliente</h3><small>Cita web de las 9:30 · datos precargados</small></div>
+                          <div class="cr-fields">
+                            <div class="cr-f scan mono"><small>VIN (escaneado)</small><b>5NMJB3AE4MH0XXXXX</b></div>
+                            <div class="cr-f"><small>Vehículo</small><b>Hyundai Tucson 2021</b></div>
+                            <div class="cr-f mono"><small>Placa</small><b>TX · NHR-4471</b></div>
+                            <div class="cr-f"><small>Cliente</small><b>Ana Morales</b></div>
+                            <div class="cr-f"><small>Teléfono</small><b>(682) 555-0188</b></div>
+                            <div class="cr-f"><small>Millaje de entrada</small><b>48,213 mi</b></div>
+                          </div>
+                          <div class="cr-f" style="margin-bottom:14px"><small>Motivo de la visita</small><b>La batería se descarga durante la noche. Ya cambió la batería hace 2 meses.</b></div>
+                          <div class="cr-insp">
+                            <div class="cr-cardiag">
+                              <svg viewBox="0 0 300 140"><rect x="30" y="18" width="240" height="104" rx="46" fill="#fff" stroke="#18181b" stroke-width="3"/><rect x="88" y="30" width="56" height="80" rx="12" fill="#e4e4e7"/><rect x="170" y="30" width="44" height="80" rx="12" fill="#e4e4e7"/><g fill="#18181b"><rect x="58" y="6" width="40" height="14" rx="5"/><rect x="200" y="6" width="40" height="14" rx="5"/><rect x="58" y="120" width="40" height="14" rx="5"/><rect x="200" y="120" width="40" height="14" rx="5"/></g><text x="150" y="76" text-anchor="middle" font-family="Inter" font-size="10" fill="#71717a">VISTA SUPERIOR</text></svg>
+                              <span class="cr-dmg" style="left:84%; top:30%">1</span>
+                              <span class="cr-dmg" style="left:22%; top:76%">2</span>
+                            </div>
+                            <div class="cr-fuel">
+                              <div class="cr-fuel__g">Combustible<div><span style="--p:40%"></span></div>40%</div>
+                              <div class="cr-checks"><span>Luces</span><span>Llantas</span><span>Espejos</span><span class="no">Rayón puerta</span><span>Llanta de repuesto</span><span class="no">Abolladura</span><span>Radio</span><span>Gato</span></div>
+                            </div>
+                          </div>
+                          <div class="cr-pics"><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /><small>Frente</small></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /><small>Tablero</small></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /><small>Daño 1</small></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /><small>Daño 2</small></span><span class="add"><svg class="ic"><use href="#i-cam"/></svg></span></div>
+                          <div class="cr-sign"><div><svg viewBox="0 0 180 50"><path d="M8 34 C18 10 26 10 28 30 S40 44 46 24 S58 6 62 28 S74 40 84 22 C92 10 100 34 112 26 S130 14 140 30 C146 38 160 30 172 20"/></svg></div><span style="font-size:12px; color:#71717a; max-width:170px">Firma digital del cliente aceptando el estado del vehículo y la autorización de diagnóstico.</span></div>
+                        </div>
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Movimientos de hoy</h3><small>6 entradas · 3 salidas</small></div>
+                            <div class="cr-move">
+                              <div><i class="out"><svg class="ic"><use href="#i-out"/></svg></i><span><b>Salida · Honda Civic 2020</b><small>Ashley J. · pagado $186.40 · 9:05 AM</small></span><span class="cr-pill p-green">Entregado</span></div>
+                              <div><i class="in"><svg class="ic"><use href="#i-in"/></svg></i><span><b>Entrada · RAM 1500 2016</b><small>Daniel T. · 8:47 AM · bahía 5</small></span><span class="cr-pill p-blue">En taller</span></div>
+                              <div><i class="in"><svg class="ic"><use href="#i-in"/></svg></i><span><b>Entrada · Nissan Altima 2018</b><small>José H. · 8:31 AM · bahía 4</small></span><span class="cr-pill p-blue">En taller</span></div>
+                              <div><i class="in"><svg class="ic"><use href="#i-in"/></svg></i><span><b>Entrada · Ford F-150 2017</b><small>Luis R. · 8:12 AM · bahía 1</small></span><span class="cr-pill p-amber">Reparación</span></div>
+                              <div><i class="out"><svg class="ic"><use href="#i-out"/></svg></i><span><b>Salida · Jeep Cherokee 2016</b><small>Pedro L. · pagado $240.00 · 8:02 AM</small></span><span class="cr-pill p-green">Entregado</span></div>
+                            </div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3><svg class="ic"><use href="#i-out"/></svg>Checklist de salida</h3><small>Silverado · Carlos P.</small></div>
+                            <div class="cr-checks" style="grid-template-columns:1fr"><span>Factura #0421 pagada</span><span>Prueba de manejo realizada</span><span>Millaje de salida: 112,604 mi</span><span>Cliente avisado por WhatsApp</span><span class="no">Firma de conformidad pendiente</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Entradas y salidas de autos</h3>
+                  <p>Cada vehículo que entra queda documentado en menos de 2 minutos desde una tableta o celular. Protege al taller ante reclamos y da confianza al cliente.</p>
+                  <ul class="ticks"><li>Escaneo de VIN y datos del cliente precargados desde la cita</li><li>Millaje, nivel de combustible y checklist de inspección</li><li>Diagrama del auto para marcar golpes y rayones</li><li>Fotos de entrada guardadas en la orden</li><li>Firma digital del cliente y recibo impreso o por WhatsApp</li><li>Bitácora de entradas y salidas con hora y responsable</li><li>Checklist de salida: pago, prueba de manejo y conformidad</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== ORDENES ===== -->
+              <div class="view" data-view="ordenes" data-url="panel.tecmeca.com/ordenes">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a class="on"><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Órdenes de trabajo <small>14 activas · arrastra para cambiar de etapa</small></h2><span class="cr-search"><svg class="ic"><use href="#i-search"/></svg>Filtrar por técnico, marca…</span><span class="cr-btn"><svg class="ic"><use href="#i-wrench"/></svg>Nueva orden</span></div>
+                    <div class="cr-body">
+                      <div class="cr-kan">
+                        <div class="cr-col" style="--c:#a1a1aa"><div class="cr-col__h"><span>Recibido</span><em>3</em></div>
+                          <div class="cr-job" style="visibility:hidden"><small>#TM-1055</small><b>.</b><p>.</p><footer>.</footer></div>
+                          <div class="cr-job"><small>#TM-1054</small><b>Jeep Wrangler 2019</b><p>Mike B. · Diagnóstico general</p><footer><span>Hace 5 min</span><span class="cr-av">EM</span></footer></div>
+                          <div class="cr-job"><small>#TM-1053</small><b>BMW 328i 2014</b><p>Kevin S. · Ventanas eléctricas</p><footer><span>Hace 20 min</span><span class="cr-av">EM</span></footer></div>
+                        </div>
+                        <div class="cr-col" style="--c:#3b82f6"><div class="cr-col__h"><span>Diagnóstico</span><em>3</em></div>
+                          <div class="cr-job" style="--c:#3b82f6"><small>#TM-1050</small><b>Nissan Altima 2018</b><p>José H. · Programar llave</p><footer><span class="cr-pill p-blue">Escaneando</span><span class="cr-av">JM</span></footer></div>
+                          <div class="cr-job" style="--c:#3b82f6"><small>#TM-1049</small><b>RAM 1500 2016</b><p>Daniel T. · Cortocircuito</p><footer><span>45 min</span><span class="cr-av">EM</span></footer></div>
+                          <div class="cr-job" style="--c:#3b82f6"><small>#TM-1048</small><b>Honda Odyssey 2012</b><p>Rosa D. · A/C no enciende</p><footer><span>1 h</span><span class="cr-av">JM</span></footer></div>
+                        </div>
+                        <div class="cr-col" style="--c:#f59e0b"><div class="cr-col__h"><span>Esperando aprobación</span><em>2</em></div>
+                          <div class="cr-job" style="--c:#f59e0b"><small>#TM-1051</small><b>Toyota Camry 2019</b><p>María G. · Cotización $362.72</p><footer><span class="cr-pill p-amber">Enviada 10:42</span><span class="cr-av">JM</span></footer></div>
+                          <div class="cr-job" style="--c:#f59e0b"><small>#TM-1046</small><b>Chevy Malibu 2017</b><p>Laura V. · Cotización $812.00</p><footer><span class="cr-pill p-red">Sin respuesta 1 d</span><span class="cr-av">EM</span></footer></div>
+                        </div>
+                        <div class="cr-col" style="--c:var(--red)"><div class="cr-col__h"><span>En reparación</span><em>3</em></div>
+                          <div class="cr-job" style="--c:var(--red)"><small>#TM-1042</small><b>Ford F-150 2017</b><p>Luis R. · Motor de arranque</p><footer><span>⏱ 1:24 h</span><span class="cr-av">JM</span></footer></div>
+                          <div class="cr-job" style="--c:var(--red)"><small>#TM-1044</small><b>Kia Sorento 2020</b><p>Pedro A. · Arnés de luces</p><footer><span>⏱ 0:40 h</span><span class="cr-av">EM</span></footer></div>
+                          <div class="cr-job" style="--c:var(--red)"><small>#TM-1047</small><b>Dodge Charger 2015</b><p>Tony R. · Módulo BCM</p><footer><span>Pieza en camino</span><span class="cr-av">JM</span></footer></div>
+                        </div>
+                        <div class="cr-col" style="--c:#8b5cf6"><div class="cr-col__h"><span>Control de calidad</span><em>1</em></div>
+                          <div class="cr-job" style="--c:#8b5cf6"><small>#TM-1043</small><b>Chevy Silverado 2015</b><p>Carlos P. · Alternador</p><footer><span class="cr-pill p-violet">Prueba de carga</span><span class="cr-av">EM</span></footer></div>
+                        </div>
+                        <div class="cr-col" style="--c:#16a34a"><div class="cr-col__h"><span>Listo para entrega</span><em>2</em></div>
+                          <div class="cr-job" style="--c:#16a34a"><small>#TM-1040</small><b>Toyota Tacoma 2018</b><p>Raúl M. · Factura #0420</p><footer><span class="cr-pill p-green">Avisado ✓</span><span class="cr-av">JM</span></footer></div>
+                          <div class="cr-job" style="--c:#16a34a"><small>#TM-1039</small><b>Mazda CX-5 2019</b><p>Sara K. · Factura #0419</p><footer><span class="cr-pill p-green">Pagado</span><span class="cr-av">EM</span></footer></div>
+                        </div>
+                        <div class="cr-job ghost" style="--c:var(--red)"><small>#TM-1055</small><b>Hyundai Tucson 2021</b><p>Ana M. · Batería se descarga</p><footer><span>Nueva · 9:34</span><span class="cr-av">EM</span></footer></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Órdenes de trabajo</h3>
+                  <p>Un tablero visual con cada auto en su etapa. Se arrastra de una columna a otra y el cliente recibe el aviso automático del cambio.</p>
+                  <ul class="ticks"><li>6 etapas: recibido, diagnóstico, aprobación, reparación, calidad y listo</li><li>Técnico asignado y cronómetro de horas trabajadas</li><li>Mano de obra y piezas cargadas a cada orden</li><li>Cotización enviada al cliente para aprobar en línea</li><li>Alertas de órdenes detenidas o sin respuesta</li><li>Aviso automático por WhatsApp en cada cambio de etapa</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== CLIENTES ===== -->
+              <div class="view" data-view="clientes" data-url="panel.tecmeca.com/clientes/luis-ramirez">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a class="on"><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Ficha del cliente <small>Cliente desde marzo 2024</small></h2><span class="cr-btn cr-btn--ghost"><svg class="ic"><use href="#i-phone"/></svg>Llamar</span><span class="cr-btn cr-btn--wa"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</span><span class="cr-btn"><svg class="ic"><use href="#i-wrench"/></svg>Nueva orden</span></div>
+                    <div class="cr-body">
+                      <div class="cr-g12">
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-card">
+                            <div class="cr-profile"><span class="cr-av">LR</span><div><h3>Luis Ramírez</h3><small>(817) 555-0123 · luis.r@email.com</small><div style="margin-top:6px; display:flex; gap:6px"><span class="cr-pill p-green">Cliente frecuente</span><span class="cr-pill p-grey">Español</span></div></div></div>
+                            <div class="cr-g2" style="margin-top:16px; gap:10px">
+                              <div class="cr-f"><small>Total gastado</small><b>$2,184.60</b></div>
+                              <div class="cr-f"><small>Visitas</small><b>7</b></div>
+                              <div class="cr-f"><small>Saldo pendiente</small><b>$0.00</b></div>
+                              <div class="cr-f"><small>Cómo nos conoció</small><b>Google Maps</b></div>
+                            </div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Vehículos (2)</h3><a>+ Agregar</a></div>
+                            <div class="cr-vehicle" style="margin-top:0"><svg viewBox="0 0 120 50" style="color:#ee3322"><use href="#car-side"/></svg><div><b>Ford F-150 XLT 2017</b><br /><small style="font-family:var(--mono)">VIN 1FTEW1EG0HFXXXXXX</small><br /><small>Placa TX GHK-2210 · 98,402 mi</small></div></div>
+                            <div class="cr-vehicle"><svg viewBox="0 0 120 50" style="color:#3f3f46"><use href="#car-side"/></svg><div><b>Honda CR-V 2015</b><br /><small style="font-family:var(--mono)">VIN 2HKRM4H7XFHXXXXXX</small><br /><small>Placa TX JRT-5543 · 131,870 mi</small></div></div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Próximo mantenimiento</h3></div>
+                            <div class="cr-alert" style="margin:0"><svg class="ic"><use href="#i-bell"/></svg>Revisión de batería CR-V · recordatorio automático el 15 de dic.</div>
+                          </div>
+                        </div>
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-g2">
+                            <div class="cr-card">
+                              <div class="cr-card__h"><h3>Códigos del último escaneo</h3><small>F-150 · hoy</small></div>
+                              <div class="cr-dtc">
+                                <div><code>P0615</code>Circuito del relé de arranque</div>
+                                <div><code>U0100</code>Pérdida de comunicación con ECM</div>
+                                <div class="ok"><code>B1318</code>Voltaje bajo de batería · resuelto</div>
+                              </div>
+                            </div>
+                            <div class="cr-card">
+                              <div class="cr-card__h"><h3>Comunicaciones</h3><small>Llamadas + WhatsApp</small></div>
+                              <div class="cr-list">
+                                <div class="cr-li"><span class="cr-dir in"><svg class="ic"><use href="#i-phone"/></svg></span><div><b>Llamada entrante · 2:41</b><small>Hoy 7:52 AM · Euclides</small></div><span class="cr-wave"><i style="--h:6px"></i><i style="--h:14px"></i><i style="--h:9px"></i><i style="--h:16px"></i><i style="--h:7px"></i><i style="--h:12px"></i></span></div>
+                                <div class="cr-li"><span class="cr-dir out"><svg class="ic"><use href="#i-wa"/></svg></span><div><b>Cotización aprobada</b><small>Hoy 10:05 AM · WhatsApp</small></div><span class="cr-pill p-green">Leído</span></div>
+                                <div class="cr-li"><span class="cr-dir out"><svg class="ic"><use href="#i-msg"/></svg></span><div><b>Aviso: en reparación</b><small>Hoy 10:12 AM · automático</small></div><span class="cr-pill p-grey">Auto</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Historial de servicios</h3><a>Exportar PDF</a></div>
+                            <div class="cr-hist">
+                              <div><i></i><span><b>Motor de arranque + cable positivo · F-150</b><small>#TM-1042 · hoy · Jesús Méndez</small></span><span class="cr-pill p-amber">En curso</span></div>
+                              <div><i></i><span><b>Alternador remanufacturado · CR-V</b><small>#TM-0911 · 12 ago 2026 · $412.30</small></span><span class="cr-pill p-green">Pagado</span></div>
+                              <div><i></i><span><b>Diagnóstico check engine (P0420) · F-150</b><small>#TM-0788 · 3 may 2026 · $95.00</small></span><span class="cr-pill p-green">Pagado</span></div>
+                              <div><i></i><span><b>Batería AGM + prueba de carga · CR-V</b><small>#TM-0602 · 18 ene 2026 · $236.80</small></span><span class="cr-pill p-green">Pagado</span></div>
+                              <div><i></i><span><b>Reparación de arnés de luces traseras · F-150</b><small>#TM-0457 · 9 oct 2025 · $318.00</small></span><span class="cr-pill p-green">Pagado</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Clientes y vehículos</h3>
+                  <p>Toda la historia de cada cliente y cada auto en una sola ficha. Cuando llama, ya sabes quién es, qué carro tiene y qué le hiciste.</p>
+                  <ul class="ticks"><li>Varios vehículos por cliente con VIN, placa y millaje</li><li>Historial completo de órdenes, facturas y pagos</li><li>Códigos de falla de cada escaneo guardados</li><li>Registro de llamadas y mensajes de WhatsApp</li><li>Recordatorios automáticos de mantenimiento</li><li>Origen del cliente: Google, referido, redes, web</li><li>Exportar a Excel o PDF</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== FACTURAS ===== -->
+              <div class="view" data-view="facturas" data-url="panel.tecmeca.com/facturas/F-0418">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a class="on"><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Factura #F-0418 <small>Generada automáticamente al cerrar la orden #TM-1042</small></h2><span class="cr-btn cr-btn--ghost"><svg class="ic"><use href="#i-print"/></svg>PDF</span><span class="cr-btn cr-btn--wa"><svg class="ic"><use href="#i-wa"/></svg>Reenviar</span></div>
+                    <div class="cr-body">
+                      <div class="cr-inv">
+                        <div class="cr-paper">
+                          <div class="cr-paper__h"><svg viewBox="0 0 330 84" style="color:#18181b"><use href="#logo-mini"/></svg><div><b>FACTURA</b>#F-0418 · 4 nov 2026<br />440 N. Bowen Rd. Ste 116 · Arlington, TX</div></div>
+                          <div class="cr-paper__to"><div><small>Cliente</small><b>Luis Ramírez</b><br />(817) 555-0123</div><div><small>Vehículo</small><b>Ford F-150 XLT 2017</b><br />98,402 mi · TX GHK-2210</div><div><small>Orden / Técnico</small><b>#TM-1042</b><br />Jesús Méndez</div></div>
+                          <table class="cr-table">
+                            <thead><tr><th>Descripción</th><th>Tipo</th><th class="num">Cant.</th><th class="num">Importe</th></tr></thead>
+                            <tbody>
+                              <tr><td><b>Diagnóstico eléctrico computarizado</b></td><td>Mano de obra</td><td class="num">1 h</td><td class="num">$95.00</td></tr>
+                              <tr><td><b>Motor de arranque remanufacturado</b><small>Parte #SR-6411 · garantía 12 meses</small></td><td>Pieza</td><td class="num">1</td><td class="num">$189.00</td></tr>
+                              <tr><td><b>Reemplazo de motor de arranque</b></td><td>Mano de obra</td><td class="num">1.5 h</td><td class="num">$142.50</td></tr>
+                              <tr><td><b>Cable positivo de batería</b></td><td>Pieza</td><td class="num">1</td><td class="num">$34.00</td></tr>
+                              <tr><td><b>Limpieza de terminales y prueba de carga</b></td><td>Servicio</td><td class="num">1</td><td class="num">$25.00</td></tr>
+                            </tbody>
+                          </table>
+                          <div class="cr-paper__tot"><div><span>Subtotal</span><b>$485.50</b></div><div><span>Impuesto 8.25% (piezas)</span><b>$18.40</b></div><div class="t"><span>Total</span><span>$503.90</span></div></div>
+                          <div class="cr-stamp">PAGADA</div>
+                        </div>
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Automatización</h3><small>Sin tocar nada</small></div>
+                            <div class="cr-auto">
+                              <div><i><svg class="ic"><use href="#i-check"/></svg></i><span><b>Orden cerrada por el técnico</b><small>1:52 PM · piezas y horas tomadas de la orden</small></span></div>
+                              <div><i><svg class="ic"><use href="#i-check"/></svg></i><span><b>Factura generada con impuestos</b><small>1:52 PM · numeración consecutiva</small></span></div>
+                              <div><i><svg class="ic"><use href="#i-check"/></svg></i><span><b>Enviada por WhatsApp y correo</b><small>1:53 PM · con link de pago</small></span></div>
+                              <div><i><svg class="ic"><use href="#i-check"/></svg></i><span><b>Pago con tarjeta recibido</b><small>2:20 PM · conciliado automáticamente</small></span></div>
+                              <div><i class="r"><svg class="ic"><use href="#i-bell"/></svg></i><span><b>Recordatorio de mantenimiento</b><small>Programado en 6 meses</small></span></div>
+                            </div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Facturas recientes</h3><a>Ver todas</a></div>
+                            <table class="cr-table">
+                              <tr class="hl"><td><b>#F-0418</b><small>Luis R.</small></td><td class="num">$503.90</td><td><span class="cr-pill p-green">Pagada</span></td></tr>
+                              <tr><td><b>#F-0417</b><small>Raúl M.</small></td><td class="num">$268.00</td><td><span class="cr-pill p-blue">Enviada</span></td></tr>
+                              <tr><td><b>#F-0416</b><small>Sara K.</small></td><td class="num">$741.25</td><td><span class="cr-pill p-amber">Abono 50%</span></td></tr>
+                              <tr><td><b>#F-0409</b><small>Laura V.</small></td><td class="num">$420.00</td><td><span class="cr-pill p-red">Vence mañana</span></td></tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Facturación automatizada</h3>
+                  <p>Cuando el técnico cierra la orden, la factura se arma sola con las piezas, horas e impuestos, y se envía al cliente con un link para pagar.</p>
+                  <ul class="ticks"><li>Factura generada desde la orden: sin escribir nada dos veces</li><li>Impuesto de Texas calculado automáticamente</li><li>Numeración consecutiva y logo de Tecmeca</li><li>Envío por WhatsApp y correo con link de pago</li><li>Estados: borrador, enviada, abono, pagada, vencida</li><li>Recordatorios automáticos de facturas por vencer</li><li>Cotizaciones que se convierten en factura con un clic</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== PAGOS ===== -->
+              <div class="view" data-view="pagos" data-url="panel.tecmeca.com/pagos">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a class="on"><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Pagos y caja <small>Noviembre 2026</small></h2><span class="cr-btn cr-btn--ghost"><svg class="ic"><use href="#i-print"/></svg>Cierre de caja</span><span class="cr-btn"><svg class="ic"><use href="#i-dollar"/></svg>Registrar pago</span></div>
+                    <div class="cr-body">
+                      <div class="cr-methods">
+                        <div class="cr-method" style="--c:#ee3322"><small>Tarjeta</small><b data-count="6420" data-prefix="$">0</b><em style="--p:82%"></em></div>
+                        <div class="cr-method" style="--c:#6d28d9"><small>Zelle</small><b data-count="2310" data-prefix="$">0</b><em style="--p:46%"></em></div>
+                        <div class="cr-method" style="--c:#16a34a"><small>Efectivo</small><b data-count="1875" data-prefix="$">0</b><em style="--p:38%"></em></div>
+                        <div class="cr-method" style="--c:#00c244"><small>Cash App</small><b data-count="640" data-prefix="$">0</b><em style="--p:14%"></em></div>
+                        <div class="cr-method" style="--c:#18181b"><small>Por cobrar</small><b data-count="1180" data-prefix="$">0</b><em style="--p:24%"></em></div>
+                      </div>
+                      <div class="cr-g21">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Pagos recibidos</h3><small>Conciliados con cada factura</small></div>
+                          <table class="cr-table">
+                            <thead><tr><th>Fecha</th><th>Cliente / factura</th><th>Método</th><th>Tipo</th><th class="num">Monto</th></tr></thead>
+                            <tbody>
+                              <tr class="hl"><td>Hoy 2:20 PM</td><td><b>Luis Ramírez</b><small>#F-0418</small></td><td>Tarjeta · link</td><td><span class="cr-pill p-green">Total</span></td><td class="num">$503.90</td></tr>
+                              <tr><td>Hoy 12:05 PM</td><td><b>Sara Kim</b><small>#F-0416</small></td><td>Zelle</td><td><span class="cr-pill p-amber">Abono 50%</span></td><td class="num">$370.62</td></tr>
+                              <tr><td>Hoy 9:05 AM</td><td><b>Ashley Johnson</b><small>#F-0415</small></td><td>Tarjeta · terminal</td><td><span class="cr-pill p-green">Total</span></td><td class="num">$186.40</td></tr>
+                              <tr><td>Hoy 8:02 AM</td><td><b>Pedro López</b><small>#F-0414</small></td><td>Efectivo</td><td><span class="cr-pill p-green">Total</span></td><td class="num">$240.00</td></tr>
+                              <tr><td>Ayer 5:40 PM</td><td><b>Raúl Medina</b><small>#F-0413</small></td><td>Cash App</td><td><span class="cr-pill p-green">Total</span></td><td class="num">$155.00</td></tr>
+                              <tr><td>Ayer 3:15 PM</td><td><b>Tony Ruiz</b><small>#TM-1047 · depósito</small></td><td>Tarjeta · link</td><td><span class="cr-pill p-blue">Depósito pieza</span></td><td class="num">$200.00</td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Ingresos por método</h3></div>
+                            <div class="cr-donut">
+                              <svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="56" stroke="#f0f0f2"/><circle cx="75" cy="75" r="56" stroke="#ee3322" stroke-dasharray="183 352"/><circle cx="75" cy="75" r="56" stroke="#6d28d9" stroke-dasharray="66 352" stroke-dashoffset="-183"/><circle cx="75" cy="75" r="56" stroke="#16a34a" stroke-dasharray="53 352" stroke-dashoffset="-249"/><circle cx="75" cy="75" r="56" stroke="#00c244" stroke-dasharray="18 352" stroke-dashoffset="-302"/></svg>
+                              <div class="cr-legend"><div style="--c:#ee3322"><i></i>Tarjeta<b>57%</b></div><div style="--c:#6d28d9"><i></i>Zelle<b>20%</b></div><div style="--c:#16a34a"><i></i>Efectivo<b>17%</b></div><div style="--c:#00c244"><i></i>Cash App<b>6%</b></div></div>
+                            </div>
+                          </div>
+                          <div class="cr-paylink"><i><svg class="ic"><use href="#i-card"/></svg></i><div><b>Link de pago</b><code>pagar.tecmeca.com/F-0417</code><small style="color:rgba(255,255,255,.6); font-size:11.5px">El cliente paga desde el celular</small></div><div class="cr-qr"><span></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span class="w"></span><span></span><span class="w"></span><span></span><span class="w"></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Pagos y caja</h3>
+                  <p>Cada dólar que entra queda ligado a una factura. Sabes al instante cuánto se cobró, por qué método y qué falta por cobrar.</p>
+                  <ul class="ticks"><li>Tarjeta, Zelle, efectivo, Cash App y otros métodos</li><li>Links de pago y código QR para cobrar desde el celular</li><li>Abonos, depósitos para piezas y pagos parciales</li><li>Cuentas por cobrar con recordatorios automáticos</li><li>Cierre de caja diario imprimible</li><li>Conciliación automática pago ↔ factura</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== CALL CENTER ===== -->
+              <div class="view" data-view="callcenter" data-url="panel.tecmeca.com/call-center">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a class="on"><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>EM</i><div><b>Euclides Montero</b><small>Recepción</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Call center <small>Llamadas, WhatsApp y SMS en una sola bandeja</small></h2><span class="cr-pill p-green" style="font-size:12px">En línea · 2 agentes</span><span class="cr-btn"><svg class="ic"><use href="#i-phone"/></svg>Marcar</span></div>
+                    <div class="cr-body">
+                      <div class="cr-cc">
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-call">
+                            <div class="cr-call__lbl"><span>● Llamada entrante</span><span>00:07</span></div>
+                            <div class="cr-call__av">MG</div>
+                            <h3>María González</h3>
+                            <p>(469) 555-0177 · Cliente reconocido</p>
+                            <div class="cr-call__ctx">
+                              <div><span>Vehículo</span><b>Toyota Camry 2019</b></div>
+                              <div><span>Orden activa</span><b>#TM-1051</b></div>
+                              <div><span>Estado</span><b style="color:#fcd34d">Esperando aprobación</b></div>
+                              <div><span>Cotización</span><b>$362.72</b></div>
+                            </div>
+                            <div class="cr-call__btns"><span><svg class="ic"><use href="#i-phone"/></svg>Contestar</span><span>Rechazar</span></div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>Guion sugerido</h3><small>Cotización pendiente</small></div>
+                            <p style="font-size:12.5px; color:#52525b">“Hola María, le habla Euclides de Tecmeca. ¿Pudo ver las fotos de la bobina y la cotización? Si la aprueba, su Camry queda lista hoy antes de las 4 PM.”</p>
+                          </div>
+                        </div>
+                        <div style="display:grid; gap:16px; align-content:start">
+                          <div class="cr-kpis" style="grid-template-columns:repeat(4,1fr)">
+                            <div class="cr-kpi"><small>Atendidas</small><b data-count="23">0</b><span>Hoy</span></div>
+                            <div class="cr-kpi"><small>Perdidas</small><b data-count="2">0</b><span class="dn">Devolver</span></div>
+                            <div class="cr-kpi"><small>Duración prom.</small><b>3:12</b><span>min</span></div>
+                            <div class="cr-kpi"><small>Citas por teléfono</small><b data-count="7">0</b><span>Conversión 30%</span></div>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-tabs"><span class="on">Todas</span><span>Llamadas</span><span>WhatsApp</span><span>SMS</span><span>Por devolver (2)</span></div>
+                            <table class="cr-table">
+                              <thead><tr><th></th><th>Contacto</th><th>Motivo / resultado</th><th>Agente</th><th>Duración</th><th></th></tr></thead>
+                              <tbody>
+                                <tr class="hl"><td><span class="cr-dir miss"><svg class="ic"><use href="#i-phone"/></svg></span></td><td><b>(817) 555-0199</b><small>Nuevo contacto</small></td><td>Llamada perdida · 9:58 AM</td><td>—</td><td>—</td><td><span class="cr-btn" style="height:30px; font-size:11px">Devolver</span></td></tr>
+                                <tr><td><span class="cr-dir in"><svg class="ic"><use href="#i-phone"/></svg></span></td><td><b>Mike Brown</b><small>Jeep Wrangler</small></td><td>Agendó diagnóstico · jue 10:00</td><td>EM</td><td>4:05</td><td><span class="cr-pill p-green">Cita</span></td></tr>
+                                <tr><td><span class="cr-dir out"><svg class="ic"><use href="#i-phone"/></svg></span></td><td><b>Laura Vega</b><small>Chevy Malibu</small></td><td>Seguimiento cotización $812</td><td>JM</td><td>2:18</td><td><span class="cr-pill p-amber">Llamar mañana</span></td></tr>
+                                <tr><td><span class="cr-dir in"><svg class="ic"><use href="#i-wa"/></svg></span></td><td><b>Rosa Díaz</b><small>Honda Odyssey</small></td><td>“¿Puedo llevarlo a las 2?” · confirmada</td><td>EM</td><td>WhatsApp</td><td><span class="cr-pill p-green">Resuelto</span></td></tr>
+                                <tr><td><span class="cr-dir in"><svg class="ic"><use href="#i-phone"/></svg></span></td><td><b>Luis Ramírez</b><small>Ford F-150</small></td><td>Pregunta por estado de reparación</td><td>EM</td><td>2:41</td><td><span class="cr-pill p-green">Resuelto</span></td></tr>
+                                <tr><td><span class="cr-dir out"><svg class="ic"><use href="#i-msg"/></svg></span></td><td><b>12 clientes</b><small>Campaña</small></td><td>Recordatorio revisión de batería antes del invierno</td><td>Auto</td><td>SMS</td><td><span class="cr-pill p-grey">Enviado</span></td></tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="cr-card">
+                            <div class="cr-card__h"><h3>WhatsApp · Rosa Díaz</h3><small>Conversación en el panel</small></div>
+                            <div class="cr-chat"><div class="cr-bub">Hola, ¿puedo llevar la Odyssey hoy a las 2? El aire no enciende.<small>11:20</small></div><div class="cr-bub me">¡Claro Rosa! Queda agendada a las 2:00 PM con Jesús. Te esperamos ✅<small>11:21 ✓✓</small></div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Call center integrado</h3>
+                  <p>Todas las conversaciones con clientes en un solo lugar. Cuando suena el teléfono, el panel te muestra quién llama, su vehículo y el estado de su orden.</p>
+                  <ul class="ticks"><li>Identificador de llamadas con la ficha del cliente</li><li>Bandeja unificada: llamadas, WhatsApp y SMS</li><li>Registro de cada llamada con motivo, agente y resultado</li><li>Cola de llamadas perdidas para devolver</li><li>Guiones sugeridos según el estado de la orden</li><li>Click para llamar y plantillas de mensajes</li><li>Campañas y recordatorios automáticos por SMS/WhatsApp</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== AGENDA ===== -->
+              <div class="view" data-view="agendacrm" data-url="panel.tecmeca.com/agenda">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a class="on"><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Agenda <small>2 – 7 de noviembre</small></h2><span class="cr-tabs" style="margin:0"><span>Día</span><span class="on">Semana</span><span>Mes</span><span>Por técnico</span></span><span class="cr-btn"><svg class="ic"><use href="#i-cal"/></svg>Nueva cita</span></div>
+                    <div class="cr-body">
+                      <div class="cr-week">
+                        <div class="cr-week__h"></div>
+                        <div class="cr-week__h">Lun<b>2</b></div><div class="cr-week__h">Mar<b>3</b></div><div class="cr-week__h on">Mié<b>4</b></div><div class="cr-week__h">Jue<b>5</b></div><div class="cr-week__h">Vie<b>6</b></div><div class="cr-week__h">Sáb<b>7</b></div>
+                        <div>
+                          <div class="cr-week__t">8 AM</div><div class="cr-week__t">9 AM</div><div class="cr-week__t">10 AM</div><div class="cr-week__t">11 AM</div><div class="cr-week__t">12 PM</div><div class="cr-week__t">1 PM</div><div class="cr-week__t">2 PM</div><div class="cr-week__t">3 PM</div><div class="cr-week__t">4 PM</div><div class="cr-week__t">5 PM</div>
+                        </div>
+                        <div class="cr-week__c"><div class="cr-ev" style="--t:0;--h:1.5;--i:0"><b>Silverado · alternador</b><small>Carlos P. · EM</small></div><div class="cr-ev" style="--t:3;--h:1;--i:1;--bg:#dbeafe;--c:#3b82f6"><b>Diagnóstico</b><small>Malibu · web</small></div><div class="cr-ev" style="--t:6;--h:2;--i:2;--bg:#ede9fe;--c:#8b5cf6"><b>Módulo BCM</b><small>Charger · JM</small></div></div>
+                        <div class="cr-week__c"><div class="cr-ev" style="--t:1;--h:1;--i:3;--bg:#dcfce7;--c:#16a34a"><b>Batería</b><small>Tacoma · llamada</small></div><div class="cr-ev" style="--t:2.5;--h:2;--i:4"><b>Arnés de luces</b><small>Sorento · EM</small></div><div class="cr-ev" style="--t:7;--h:1;--i:5;--bg:#dbeafe;--c:#3b82f6"><b>Check engine</b><small>CX-5 · web</small></div></div>
+                        <div class="cr-week__c"><div class="cr-now"></div><div class="cr-ev" style="--t:0.2;--h:1.3;--i:6"><b>F-150 · arranque</b><small>Luis R. · JM</small></div><div class="cr-ev" style="--t:1.5;--h:1;--i:7;--bg:#dcfce7;--c:#16a34a"><b>Tucson · batería</b><small>Ana M. · web</small></div><div class="cr-ev" style="--t:3;--h:1;--i:8;--bg:#dbeafe;--c:#3b82f6"><b>BMW · ventanas</b><small>Kevin S. · llamada</small></div><div class="cr-ev" style="--t:6;--h:1.5;--i:9;--bg:#fef3c7;--c:#f59e0b"><b>Odyssey · A/C</b><small>Rosa D. · WhatsApp</small></div></div>
+                        <div class="cr-week__c"><div class="cr-ev" style="--t:2;--h:1;--i:10;--bg:#dbeafe;--c:#3b82f6"><b>Jeep · diagnóstico</b><small>Mike B. · web</small></div><div class="cr-ev" style="--t:4;--h:2;--i:11"><b>Programar llaves</b><small>Altima · JM</small></div></div>
+                        <div class="cr-week__c"><div class="cr-ev" style="--t:1;--h:2;--i:12;--bg:#ede9fe;--c:#8b5cf6"><b>Cableado completo</b><small>RAM 1500 · EM</small></div><div class="cr-ev" style="--t:5;--h:1;--i:13;--bg:#dcfce7;--c:#16a34a"><b>Alternador</b><small>Civic · web</small></div></div>
+                        <div class="cr-week__c"><div class="cr-ev" style="--t:0.5;--h:1;--i:14;--bg:#dbeafe;--c:#3b82f6"><b>Diagnóstico</b><small>Accord · web</small></div><div class="cr-ev" style="--t:2;--h:1;--i:15;--bg:#fef3c7;--c:#f59e0b"><b>Luces</b><small>Escape · llamada</small></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Agenda de citas</h3>
+                  <p>Una sola agenda para las citas de la web, del teléfono y de WhatsApp. Sin dobles reservas y con recordatorios automáticos que reducen las ausencias.</p>
+                  <ul class="ticks"><li>Vista por día, semana, mes y por técnico</li><li>Las citas web entran solas con vehículo y servicio</li><li>Horario de atención y duración por servicio editables</li><li>Confirmación y recordatorio automático un día antes</li><li>Color por tipo de servicio y origen de la cita</li><li>Convertir una cita en entrada de vehículo con un clic</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== INVENTARIO ===== -->
+              <div class="view" data-view="inventario" data-url="panel.tecmeca.com/inventario">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a class="on"><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Inventario de piezas <small>248 artículos · valor $18,430</small></h2><span class="cr-search"><svg class="ic"><use href="#i-search"/></svg>Buscar pieza o número de parte…</span><span class="cr-btn cr-btn--ghost">Orden de compra</span><span class="cr-btn"><svg class="ic"><use href="#i-box"/></svg>Agregar pieza</span></div>
+                    <div class="cr-body">
+                      <div class="cr-kpis" style="grid-template-columns:repeat(4,1fr)">
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-box"/></svg></i><small>Artículos</small><b data-count="248">0</b><span>12 categorías</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-bell"/></svg></i><small>Stock bajo</small><b data-count="5">0</b><span class="dn">Reordenar</span></div>
+                        <div class="cr-kpi"><i><svg class="ic"><use href="#i-wrench"/></svg></i><small>Usadas este mes</small><b data-count="86">0</b><span>Descontadas por orden</span></div>
+                        <div class="cr-kpi cr-kpi--dark"><i><svg class="ic"><use href="#i-dollar"/></svg></i><small>Margen en piezas</small><b data-count="38" data-suffix="%">0</b><span>+4 pts</span></div>
+                      </div>
+                      <div class="cr-card">
+                        <table class="cr-table">
+                          <thead><tr><th>Pieza</th><th>N.º de parte</th><th>Categoría</th><th>Proveedor</th><th>Existencia</th><th class="num">Costo</th><th class="num">Precio</th><th></th></tr></thead>
+                          <tbody>
+                            <tr class="hl"><td><b>Alternador remanufacturado 160A</b></td><td style="font-family:var(--mono)">AL-6420</td><td>Carga</td><td>Bosch · O'Reilly</td><td><div class="cr-stock low"><div><span style="--p:10%"></span></div>1</div></td><td class="num">$168.00</td><td class="num">$259.00</td><td><span class="cr-pill p-red">Reordenar</span></td></tr>
+                            <tr><td><b>Motor de arranque reman.</b></td><td style="font-family:var(--mono)">SR-6411</td><td>Arranque</td><td>Denso · AutoZone</td><td><div class="cr-stock mid"><div><span style="--p:35%"></span></div>3</div></td><td class="num">$121.00</td><td class="num">$189.00</td><td><span class="cr-pill p-amber">Bajo</span></td></tr>
+                            <tr><td><b>Batería AGM Group 48</b></td><td style="font-family:var(--mono)">BAT-H6</td><td>Baterías</td><td>Interstate</td><td><div class="cr-stock"><div><span style="--p:80%"></span></div>12</div></td><td class="num">$142.00</td><td class="num">$219.00</td><td><span class="cr-pill p-green">OK</span></td></tr>
+                            <tr><td><b>Bobina de encendido Toyota</b></td><td style="font-family:var(--mono)">IC-9091</td><td>Encendido</td><td>Denso</td><td><div class="cr-stock"><div><span style="--p:60%"></span></div>8</div></td><td class="num">$44.00</td><td class="num">$78.00</td><td><span class="cr-pill p-green">OK</span></td></tr>
+                            <tr><td><b>Bujía iridio</b></td><td style="font-family:var(--mono)">SP-IK20</td><td>Encendido</td><td>NGK</td><td><div class="cr-stock"><div><span style="--p:90%"></span></div>40</div></td><td class="num">$9.50</td><td class="num">$16.00</td><td><span class="cr-pill p-green">OK</span></td></tr>
+                            <tr><td><b>Relé de arranque universal</b></td><td style="font-family:var(--mono)">RL-3021</td><td>Eléctrico</td><td>Standard</td><td><div class="cr-stock low"><div><span style="--p:15%"></span></div>2</div></td><td class="num">$12.00</td><td class="num">$29.00</td><td><span class="cr-pill p-red">Reordenar</span></td></tr>
+                            <tr><td><b>Cable positivo de batería</b></td><td style="font-family:var(--mono)">CB-2G18</td><td>Cableado</td><td>Dorman</td><td><div class="cr-stock"><div><span style="--p:55%"></span></div>6</div></td><td class="num">$18.00</td><td class="num">$34.00</td><td><span class="cr-pill p-green">OK</span></td></tr>
+                            <tr><td><b>Kit de fusibles y relés</b></td><td style="font-family:var(--mono)">FS-KIT1</td><td>Eléctrico</td><td>Bussmann</td><td><div class="cr-stock mid"><div><span style="--p:30%"></span></div>4</div></td><td class="num">$22.00</td><td class="num">$45.00</td><td><span class="cr-pill p-amber">Bajo</span></td></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Inventario de piezas</h3>
+                  <p>Las piezas que se usan en una orden se descuentan solas del inventario. Sabes qué tienes, qué falta y cuánto ganas en cada pieza.</p>
+                  <ul class="ticks"><li>Existencias con alerta de stock mínimo</li><li>Descuento automático al cargar la pieza a una orden</li><li>Costo, precio de venta y margen por pieza</li><li>Proveedores y órdenes de compra</li><li>Garantía de cada pieza instalada</li><li>Valor total del inventario en tiempo real</li></ul>
+                </div>
+              </div>
+
+              <!-- ===== REPORTES ===== -->
+              <div class="view" data-view="reportes" data-url="panel.tecmeca.com/reportes">
+                <div class="cr">
+                  <aside class="cr-side"><div class="cr-brand"><svg viewBox="0 0 330 84" style="color:#fff"><use href="#logo-mini"/></svg></div><small>Taller</small><a><svg class="ic"><use href="#i-grid"/></svg>Resumen</a><a><svg class="ic"><use href="#i-in"/></svg>Entradas y salidas<em>6</em></a><a><svg class="ic"><use href="#i-kanban"/></svg>Órdenes<em>14</em></a><a><svg class="ic"><use href="#i-cal"/></svg>Agenda</a><a><svg class="ic"><use href="#i-users"/></svg>Clientes y vehículos</a><small>Dinero</small><a><svg class="ic"><use href="#i-invoice"/></svg>Facturación</a><a><svg class="ic"><use href="#i-card"/></svg>Pagos<em class="r">3</em></a><small>Comunicación</small><a><svg class="ic"><use href="#i-headset"/></svg>Call center<em class="r">2</em></a><a><svg class="ic"><use href="#i-msg"/></svg>WhatsApp</a><small>Gestión</small><a><svg class="ic"><use href="#i-box"/></svg>Inventario</a><a class="on"><svg class="ic"><use href="#i-chart"/></svg>Reportes</a><div class="cr-user"><i>JM</i><div><b>Jesús Méndez</b><small>Administrador</small></div></div></aside>
+                  <div class="cr-main">
+                    <div class="cr-top"><h2>Reportes <small>Últimos 6 meses</small></h2><span class="cr-tabs" style="margin:0"><span>Mes</span><span>Trimestre</span><span class="on">6 meses</span><span>Año</span></span><span class="cr-btn cr-btn--ghost">Exportar Excel</span></div>
+                    <div class="cr-body">
+                      <div class="cr-kpis" style="grid-template-columns:repeat(4,1fr)">
+                        <div class="cr-kpi cr-kpi--dark"><small>Ingresos del mes</small><b data-count="38640" data-prefix="$">0</b><span>+22% vs. mes anterior</span></div>
+                        <div class="cr-kpi"><small>Ticket promedio</small><b data-count="312" data-prefix="$">0</b><span>+$28</span></div>
+                        <div class="cr-kpi"><small>Órdenes cerradas</small><b data-count="124">0</b><span>Este mes</span></div>
+                        <div class="cr-kpi"><small>Clientes nuevos</small><b data-count="41">0</b><span>58% desde Google y la web</span></div>
+                      </div>
+                      <div class="cr-g21">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Ingresos mensuales</h3><small>Jun – Nov</small></div>
+                          <svg class="cr-line" viewBox="0 0 640 190" preserveAspectRatio="none">
+                            <line x1="0" y1="40" x2="640" y2="40"/><line x1="0" y1="90" x2="640" y2="90"/><line x1="0" y1="140" x2="640" y2="140"/>
+                            <path class="a" d="M10 150 C80 140 110 120 130 122 S220 110 250 104 S340 80 370 86 S460 60 490 52 S580 30 630 22 V190 H10 Z"/>
+                            <path class="l" d="M10 150 C80 140 110 120 130 122 S220 110 250 104 S340 80 370 86 S460 60 490 52 S580 30 630 22"/>
+                            <text x="10" y="186">JUN</text><text x="130" y="186">JUL</text><text x="250" y="186">AGO</text><text x="370" y="186">SEP</text><text x="490" y="186">OCT</text><text x="600" y="186">NOV</text>
+                          </svg>
+                        </div>
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Equipo</h3><small>Horas facturadas</small></div>
+                          <div class="cr-team">
+                            <div><span class="cr-av">JM</span><span><b>Jesús Méndez</b><small>Técnico líder · 64 órdenes</small></span><b>142 h</b></div>
+                            <div><span class="cr-av" style="background:#18181b">EM</span><span><b>Euclides Montero</b><small>Técnico · 60 órdenes</small></span><b>131 h</b></div>
+                            <div><span class="cr-av" style="background:#a1a1aa">RC</span><span><b>Recepción</b><small>Rol con permisos limitados</small></span><b>—</b></div>
+                          </div>
+                          <div class="cr-alert" style="background:#f4f4f6; color:#3f3f46"><svg class="ic"><use href="#i-lock"/></svg>Roles: Administrador, Técnico y Recepción</div>
+                        </div>
+                      </div>
+                      <div class="cr-g2">
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>Ingresos por servicio</h3></div>
+                          <div class="cr-hbar">
+                            <div>Diagnóstico<span style="--p:92%"></span><b>$9,840</b></div>
+                            <div>Arranque / carga<span style="--p:78%"></span><b>$8,310</b></div>
+                            <div>Cableado<span style="--p:60%"></span><b>$6,420</b></div>
+                            <div>Módulos y llaves<span style="--p:48%"></span><b>$5,150</b></div>
+                            <div>Baterías<span style="--p:36%"></span><b>$3,860</b></div>
+                          </div>
+                        </div>
+                        <div class="cr-card">
+                          <div class="cr-card__h"><h3>¿De dónde vienen los clientes?</h3></div>
+                          <div class="cr-hbar">
+                            <div>Google / Maps<span style="--p:88%"></span><b>34%</b></div>
+                            <div>Sitio web<span style="--p:62%"></span><b>24%</b></div>
+                            <div>Referidos<span style="--p:52%"></span><b>20%</b></div>
+                            <div>Facebook / IG<span style="--p:36%"></span><b>14%</b></div>
+                            <div>Pasaban por ahí<span style="--p:20%"></span><b>8%</b></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view__info" hidden>
+                  <h3>Reportes y equipo</h3>
+                  <p>Decisiones con números reales: qué servicios dejan más dinero, de dónde llegan los clientes y cómo rinde cada técnico.</p>
+                  <ul class="ticks"><li>Ingresos por día, mes y año</li><li>Ticket promedio y órdenes cerradas</li><li>Ingresos por tipo de servicio</li><li>Origen de los clientes (Google, web, referidos)</li><li>Horas facturadas y productividad por técnico</li><li>Usuarios con roles y permisos (admin, técnico, recepción)</li><li>Exportar a Excel</li></ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="show__info rv" style="--d:.15s" id="crmInfo"></div>
+      </div>
+    </div>
+
+    <!-- modules grid -->
+    <div class="modgrid">
+      <div class="mod rv"><div class="mod__head"><i><svg class="ic"><use href="#i-in"/></svg></i><h3>Recepción</h3></div><ul class="ticks"><li>Entrada con fotos y firma</li><li>Inspección y combustible</li><li>Recibo digital</li><li>Bitácora de salidas</li></ul></div>
+      <div class="mod rv" style="--d:.05s"><div class="mod__head"><i><svg class="ic"><use href="#i-wrench"/></svg></i><h3>Taller</h3></div><ul class="ticks"><li>Órdenes en tablero</li><li>Cronómetro por técnico</li><li>Bahías en vivo</li><li>Control de calidad</li></ul></div>
+      <div class="mod rv" style="--d:.1s"><div class="mod__head"><i><svg class="ic"><use href="#i-invoice"/></svg></i><h3>Dinero</h3></div><ul class="ticks"><li>Cotizaciones en línea</li><li>Factura automática</li><li>Links de pago y QR</li><li>Abonos y cierre de caja</li></ul></div>
+      <div class="mod rv" style="--d:.15s"><div class="mod__head"><i><svg class="ic"><use href="#i-headset"/></svg></i><h3>Clientes</h3></div><ul class="ticks"><li>Call center y WhatsApp</li><li>Avisos automáticos</li><li>Recordatorios de servicio</li><li>Portal “estado de mi auto”</li></ul></div>
+    </div>
+
+    <!-- mobile -->
+    <div class="mob">
+      <div class="mob__txt rv">
+        <p class="label">En el celular</p>
+        <h3>El taller en tu bolsillo. El cliente, siempre informado.</h3>
+        <p>Los técnicos marcan tareas, toman fotos y llevan el tiempo desde su celular. El cliente recibe cada avance por WhatsApp: diagnóstico, cotización, factura y aviso de que su auto está listo.</p>
+        <ul class="ticks"><li>App web para técnicos: sin instalar nada</li><li>Fotos del diagnóstico directo a la orden</li><li>Mensajes automáticos en cada etapa</li><li>El cliente aprueba y paga desde su celular</li></ul>
+      </div>
+      <div class="rv" style="--d:.1s">
+        <div class="phone"><div class="phone__screen" data-base="390"><div class="phone__scaler">
+          <div class="mp">
+            <div class="mp-head"><small>Orden #TM-1042 · Bahía 1</small><h3>Ford F-150 2017</h3><span class="cr-pill p-amber">En reparación</span></div>
+            <div class="mp-body">
+              <div class="mp-timer"><div><small>Tiempo trabajado</small><b id="techTimer">01:24:08</b></div><svg class="ic" style="width:30px;height:30px"><use href="#i-clock"/></svg></div>
+              <div class="mp-card"><h4>Tareas</h4>
+                <div class="mp-task ok"><i></i><span>Diagnóstico de arranque</span></div>
+                <div class="mp-task ok"><i></i><span>Retirar motor de arranque</span></div>
+                <div class="mp-task ok"><i></i><span>Instalar SR-6411</span></div>
+                <div class="mp-task"><i></i><span>Reemplazar cable positivo</span></div>
+                <div class="mp-task"><i></i><span>Prueba de carga y arranque</span></div>
+              </div>
+              <div class="mp-card"><h4>Fotos (3)</h4><div class="cr-pics" style="grid-template-columns:repeat(3,1fr); margin:0"><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></span><span><img src="../assets/diagnostico.webp" alt="" loading="lazy" /></span><span class="add"><svg class="ic"><use href="#i-cam"/></svg></span></div></div>
+              <div class="mp-btn"><svg class="ic"><use href="#i-wa"/></svg>Avisar al cliente</div>
+            </div>
+          </div>
+        </div></div></div>
+        <p class="phone__cap">App del técnico</p>
+      </div>
+      <div class="rv is-anim" style="--d:.2s" id="waPhone">
+        <div class="phone"><div class="phone__screen" data-base="390"><div class="phone__scaler">
+          <div class="wa">
+            <div class="wa-head"><i><svg viewBox="0 0 120 50" style="color:#ee3322"><use href="#car-side"/></svg></i><div><b>Tecmeca</b><small>Cuenta de empresa</small></div></div>
+            <div class="wa-body">
+              <span class="wa-day">HOY</span>
+              <div class="wa-msg" style="--i:0">Hola Luis 👋 Recibimos tu <b>Ford F-150 2017</b>. Orden #TM-1042. Sigue tu reparación aquí:<div class="wa-link">Estado de mi vehículo<span>tecmeca.com/estado/TM-1042</span></div><small>8:13 AM</small></div>
+              <div class="wa-msg" style="--i:1">Diagnóstico listo ✅ El motor de arranque está dañado. Cotización: <b>$503.90</b><div class="wa-link">Ver fotos y aprobar<span>tecmeca.com/c/1042</span></div><small>9:41 AM</small></div>
+              <div class="wa-msg me" style="--i:2">Aprobado 👍<small>10:05 AM ✓✓</small></div>
+              <div class="wa-msg" style="--i:3">¡Tu F-150 está lista! 🚗⚡ Factura #F-0418 · Total <b>$503.90</b><div class="wa-link">Pagar en línea<span>pagar.tecmeca.com/F-0418</span></div><small>1:53 PM</small></div>
+              <div class="wa-msg me" style="--i:4">Pagado, voy en camino 🙌<small>2:20 PM ✓✓</small></div>
+              <div class="wa-msg" style="--i:5">Pago recibido ✔️ ¡Gracias por confiar en Tecmeca! Te recordaremos tu próximo mantenimiento.<small>2:20 PM</small></div>
+            </div>
+          </div>
+        </div></div></div>
+        <p class="phone__cap">Avisos automáticos al cliente</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 TIMELINE ================= -->
+<section class="tl" id="entrega">
+  <div class="container">
+    <p class="label rv">05 — Entrega</p>
+    <h2 class="h2 split" style="color:var(--ink)">Listo en <em>5 días.</em> Máximo.</h2>
+    <p class="sub rv">Un plan día por día. Empezamos al recibir el primer pago y entregamos todo funcionando, con capacitación para el equipo.</p>
+    <div class="tl__wrap" id="tl">
+      <div class="tl__road"><div class="tl__prog"></div>
+        <svg class="tl__car" viewBox="0 0 120 50" aria-hidden="true"><path d="M6 36 C6 30 10 27 18 26 L34 23 C42 15 52 11 64 11 C78 11 88 15 96 22 C104 24 112 26 114 30 L114 36 Z" fill="#ee3322"/><path d="M40 23 C46 17 54 15 62 15 L64 23 Z M68 15 C78 15 86 18 91 23 L70 23 Z" fill="#fff" opacity=".85"/><g class="wheel"><circle cx="30" cy="37" r="8" fill="#18181b"/><path d="M26 37 H34 M30 33 V41" stroke="#d4d4d8" stroke-width="2"/></g><g class="wheel"><circle cx="92" cy="37" r="8" fill="#18181b"/><path d="M88 37 H96 M92 33 V41" stroke="#d4d4d8" stroke-width="2"/></g></svg>
+      </div>
+      <div class="tl__days">
+        <div class="day rv"><small>Día 1</small><h3>Arranque</h3><ul><li>Pago inicial del 60%</li><li>Registro del dominio</li><li>Recibimos fotos, horarios y servicios</li></ul><span class="day__pay day__pay--r">Pago 1 · 60%</span></div>
+        <div class="day rv" style="--d:.08s"><small>Día 2</small><h3>Diseño</h3><ul><li>Diseño del sitio en ES / EN</li><li>Estructura del CRM con sus datos</li><li>Revisión con ustedes</li></ul></div>
+        <div class="day rv" style="--d:.16s"><small>Día 3</small><h3>Desarrollo</h3><ul><li>Sitio web completo</li><li>Agenda y portal del cliente</li><li>Módulos del panel</li></ul></div>
+        <div class="day rv" style="--d:.24s"><small>Día 4</small><h3>Conexión</h3><ul><li>Web ↔ CRM conectados</li><li>Facturas, pagos y avisos</li><li>Pruebas completas</li></ul></div>
+        <div class="day rv" style="--d:.32s"><small>Día 5</small><h3>Entrega</h3><ul><li>Publicación en su dominio</li><li>Usuarios y capacitación</li><li>Pago final del 40%</li></ul><span class="day__pay">Pago 2 · 40%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 PRICING ================= -->
+<section class="price" id="inversion">
+  <div class="container">
+    <p class="label rv">06 — Inversión</p>
+    <h2 class="h2 split">Un paquete. <em>Precio especial.</em></h2>
+    <p class="sub rv">Juntamos el sitio web y el CRM en un solo proyecto para Tecmeca, con un descuento sobre nuestros precios regulares. Pago único dividido en dos partes.</p>
+
+    <div class="value">
+      <div class="value__col rv">
+        <h3>Precio regular DGP Global Group</h3>
+        <div class="vrow"><span>Sitio web profesional<small>Plan Estándar · hasta 5 páginas + agenda</small></span><s style="--d:.4s">$455</s></div>
+        <div class="vrow"><span>Panel CRM a medida<small>Taller completo · pago único</small></span><s style="--d:.6s">$997</s></div>
+        <div class="vtotal"><span>Valor total</span><s>$1,452</s></div>
+      </div>
+      <div class="value__arrow rv-s" style="--d:.2s"><span><svg class="ic"><use href="#i-arrow"/></svg></span></div>
+      <div class="value__col value__col--deal rv" style="--d:.3s">
+        <span class="deal__ribbon"><svg class="ic" style="width:14px;height:14px"><use href="#i-bolt"/></svg>Paquete Tecmeca</span>
+        <div class="deal__num"><sup>$</sup><span data-count="865">0</span><span class="usd">USD</span></div>
+        <div class="deal__save"><svg class="ic" style="width:18px;height:18px"><use href="#i-check"/></svg>Ahorras $587 (40%)</div>
+        <div class="split-bar">
+          <div class="split-bar__track"><div class="split-bar__a"><span>60%</span><span>$519</span></div><div class="split-bar__b"><span>40%</span><span>$346</span></div></div>
+          <div class="split-bar__legend"><span>Al aprobar · inicia el proyecto</span><span>Al entregar · día 5</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="price__grid">
+      <div class="card rv">
+        <h3>Proyecto</h3>
+        <div class="line-item"><span>Sitio web + Panel CRM<small>Diseño, desarrollo, conexión y capacitación · entrega en 5 días</small></span><strong>$865</strong></div>
+
+        <h3 class="mt">Plan de hosting</h3>
+        <fieldset class="plans">
+          <legend class="sr" style="position:absolute; left:-9999px">Plan de hosting</legend>
+          <label class="plan"><input type="radio" name="hosting" value="anual" checked /><span class="plan__box"><span class="plan__name">Anual <span class="plan__radio"></span></span><span class="plan__price">$145<small>/año</small></span><span class="plan__note">Equivale a $12.08 al mes</span><span class="plan__badge">Ahorras $155 al año</span></span></label>
+          <label class="plan"><input type="radio" name="hosting" value="mensual" /><span class="plan__box"><span class="plan__name">Mensual <span class="plan__radio"></span></span><span class="plan__price">$25<small>/mes</small></span><span class="plan__note">$300 al año pagando mes a mes</span><span class="plan__badge">Sin pago anual</span></span></label>
+        </fieldset>
+        <ul class="incl"><li>Publicación del sitio y del panel en internet</li><li>Certificado de seguridad (https)</li><li>Base de datos del CRM y copias de seguridad</li><li>Soporte técnico y actualizaciones de seguridad</li></ul>
+
+        <h3 class="mt">Dominio</h3>
+        <label class="addon"><input type="checkbox" id="domain" checked /><span class="addon__box"><span class="addon__check"></span><span><b>Dominio .com por 1 año</b><small>tecmeca.com o el disponible que prefieran, registrado a nombre de Tecmeca</small></span><strong>$25</strong></span></label>
+
+        <div class="notinc">
+          <h4>No incluye</h4>
+          <ul>
+            <li>Comisiones de procesadores de pago (Stripe, Square, etc.) que cobra cada proveedor por transacción</li>
+            <li>Costos de proveedores de telefonía o SMS para el call center (p. ej. número virtual o minutos), si se activan</li>
+            <li>Renovación anual del dominio ($25 al año)</li>
+            <li>Funciones nuevas fuera de esta propuesta: se cotizan aparte</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card summary rv" style="--d:.1s" aria-live="polite">
+        <h3>Resumen</h3>
+        <div class="line-item"><span>Sitio web + Panel CRM<small>Pago único</small></span><strong>$865</strong></div>
+        <div class="line-item"><span id="sumHostName">Hosting · plan anual<small>Primer año</small></span><strong id="sumHost">$145</strong></div>
+        <div class="line-item" id="sumDomainRow"><span>Dominio .com<small>Primer año</small></span><strong>$25</strong></div>
+
+        <div class="paybox">
+          <div class="payrow"><span class="payrow__n">1</span><span><b>Al aprobar · 60%</b><small id="pay1note">Proyecto $519 + dominio $25</small></span><strong id="pay1">$544</strong></div>
+          <div class="payrow"><span class="payrow__n">2</span><span><b>Al entregar · 40%</b><small id="pay2note">Proyecto $346 + hosting $145</small></span><strong id="pay2">$491</strong></div>
+        </div>
+
+        <div class="total">
+          <small>Inversión total</small>
+          <div class="total__num"><sup>$</sup><span id="total">1,035</span><span class="usd">USD</span></div>
+          <p class="total__then" id="then">Después: $145 al año de hosting + $25 al año de dominio.</p>
+        </div>
+
+        <form class="accept" id="acceptForm" novalidate>
+          <div class="field" id="nameField"><input id="name" type="text" placeholder=" " autocomplete="name" required /><label for="name">Nombre de quien aprueba*</label></div>
+          <label class="check"><input type="checkbox" id="agree" required /><span>He revisado la propuesta y la acepto con el plan de hosting y las opciones seleccionadas.</span></label>
+          <button class="btn btn--wa" type="submit" id="acceptBtn" disabled><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Aceptar propuesta por WhatsApp</button>
+          <p class="accept__note">Se enviará tu aceptación a DGP Global Group para emitir la factura del primer pago.</p>
+          <p class="accept__ok" id="acceptOk" hidden>¡Listo! Abrimos WhatsApp con tu aceptación. 🚀</p>
+        </form>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="terms">
+  <div class="container">
+    <div class="terms__grid">
+      <div class="rv"><h4>Entrega</h4><p>Máximo 5 días a partir del primer pago y de recibir el contenido (fotos, horarios y lista de servicios).</p></div>
+      <div class="rv" style="--d:.06s"><h4>Forma de pago</h4><p>60% ($519) al aprobar para iniciar y 40% ($346) al entregar. Dominio y hosting según el plan elegido.</p></div>
+      <div class="rv" style="--d:.12s"><h4>Propiedad</h4><p>El dominio, el sitio, el panel y todos los datos de clientes quedan a nombre de Tecmeca.</p></div>
+      <div class="rv" style="--d:.18s"><h4>Vigencia</h4><p>Emitida el 25 de octubre de 2026. Válida por 15 días.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__big split">Pongamos a Tecmeca <em>a toda máquina.</em></p>
+    <div class="foot__cta">
+      <a class="btn btn--dark" href="#inversion" data-magnet>Aceptar propuesta <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--light" href="https://wa.me/12398231738?text=Hola%20DGP%20Global%20Group%2C%20tengo%20preguntas%20sobre%20la%20propuesta%20de%20Tecmeca." target="_blank" rel="noopener" data-magnet>Tengo preguntas</a>
+    </div>
+    <div class="foot__row">
+      <span class="foot__by">Propuesta preparada por <a href="https://dgpglobalgroup.com" target="_blank" rel="noopener">DGP Global Group</a></span>
+      <span>Tecmeca Auto Electrical Engineering · 440 N. Bowen Rd. Suite 116 · Arlington, TX 76012</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><div><small>Inversión total</small><strong id="mbarTotal">$1,035</strong></div><a href="#inversion">Aceptar propuesta</a></div>
+
+<script src="app.js"></script>
+</body>
+</html>
