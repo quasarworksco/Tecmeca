@@ -33,8 +33,10 @@
       l.setAttribute("x2", 160 + Math.sin(a) * 96); l.setAttribute("y2", 170 - Math.cos(a) * 96);
       l.setAttribute("class", "tick"); ticks.appendChild(l);
     }
-    if (reduced) { loader.classList.add("is-gone"); startPage(); return; }
-    const dur = 1700, t0 = performance.now();
+    let seen = false;
+    try { seen = sessionStorage.getItem("tecmeca-intro") === "1"; sessionStorage.setItem("tecmeca-intro", "1"); } catch (e) {}
+    if (reduced || seen) { loader.classList.add("is-gone"); setTimeout(startPage, 0); return; }
+    const dur = 900, t0 = performance.now();
     const ease = (p) => 1 - Math.pow(1 - p, 3);
     const step = (t) => {
       const p = Math.min(1, (t - t0) / dur), e = ease(p);
@@ -46,9 +48,9 @@
       else {
         setTimeout(() => {
           loader.classList.add("is-out");
-          setTimeout(startPage, 450);
-          setTimeout(() => loader.classList.add("is-gone"), 1200);
-        }, 180);
+          setTimeout(startPage, 280);
+          setTimeout(() => loader.classList.add("is-gone"), 1150);
+        }, 60);
       }
     };
     requestAnimationFrame(step);
@@ -79,12 +81,18 @@
     }
   })();
   const arcLen = G.r * Math.PI * 1.5;
-  hvArc.style.strokeDasharray = arcLen; hvArc.style.strokeDashoffset = arcLen;
-  let gaugeVal = 0, needleTip = null;
+  // soft glow underneath the arc and the circuit pulses (a static stroke instead of an animated filter)
+  const hvGlow = hvArc.cloneNode(); hvGlow.removeAttribute("id"); hvGlow.classList.add("arc--glow");
+  hvArc.before(hvGlow);
+  $$(".circuit .pulse").forEach((p) => { const g = p.cloneNode(); g.classList.add("pulse--glow"); p.before(g); });
+  [hvArc, hvGlow].forEach((a) => { a.style.strokeDasharray = arcLen; a.style.strokeDashoffset = arcLen; });
+  let gaugeVal = 0, needleTip = null, heroVisible = true;
+  new IntersectionObserver(([e]) => (heroVisible = e.isIntersecting)).observe($(".hero"));
   function heroGaugeStart() {
     if (reduced) { setGauge(3.2); return; }
     const t0 = performance.now();
     const loop = (t) => {
+      if (!heroVisible || document.hidden) { requestAnimationFrame(loop); return; }
       const s = (t - t0) / 1000;
       // intro sweep to redline then settle into a revving idle
       let v;
@@ -103,7 +111,7 @@
     gaugeVal = v;
     const a = -135 + (v / 8) * 270;
     hvNeedle.style.transform = `rotate(${a}deg)`;
-    hvArc.style.strokeDashoffset = arcLen * (1 - v / 8);
+    hvArc.style.strokeDashoffset = hvGlow.style.strokeDashoffset = arcLen * (1 - v / 8);
     hvRead.textContent = v.toFixed(1);
     needleTip = pt(a, 196);
   }
@@ -247,6 +255,12 @@
       el.addEventListener("pointerleave", () => (el.style.transform = ""));
     });
   }
+
+  /* ---------------- pause looping CSS animations off-screen ---------------- */
+  (() => {
+    const po = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("is-paused", !e.isIntersecting)), { rootMargin: "200px 0px" });
+    $$("main > section, .marquee, .foot").forEach((el) => po.observe(el));
+  })();
 
   /* ---------------- pipeline cycle ---------------- */
   (() => {
