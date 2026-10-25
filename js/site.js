@@ -22,10 +22,11 @@
   };
   $$(".lang button").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
 
-  /* WhatsApp quick links with a pre-filled message in the current language */
+  /* WhatsApp quick links: the pre-filled message is always in Spanish so Jesús reads every request the same way */
   const waUrl = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+  const smsUrl = (text) => `sms:+${WHATSAPP}?&body=${encodeURIComponent(text)}`;
   function updateWaLinks() {
-    $$("[data-wa]").forEach((a) => (a.href = waUrl(lang === "en" ? a.dataset.waEn : a.dataset.wa)));
+    $$("[data-wa]").forEach((a) => (a.href = waUrl(a.dataset.wa)));
   }
   updateWaLinks();
   if (store("tecmeca-lang") === "en") setLang("en");
@@ -88,7 +89,24 @@
 
   $$("input, select", form).forEach((el) => el.addEventListener("input", () => el.closest(".field")?.classList.remove("has-error")));
 
-  form.addEventListener("submit", (e) => {
+  // English problem descriptions are translated so the request always arrives in Spanish.
+  // Free MyMemory API; if it fails or is slow, the original text is sent unchanged.
+  const toSpanish = async (text) => {
+    if (!text || lang !== "en") return text;
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 3500);
+    try {
+      const r = await fetch(`https://api.mymemory.translated.net/get?langpair=en|es&q=${encodeURIComponent(text.slice(0, 480))}`, { signal: ctrl.signal });
+      const t = (await r.json())?.responseData?.translatedText;
+      return t && !/MYMEMORY WARNING|INVALID/i.test(t) ? `${t} (original: "${text}")` : text;
+    } catch (e) {
+      return text;
+    } finally {
+      clearTimeout(timer);
+    }
+  };
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const required = $$("[required]", form);
     let first = null;
@@ -99,28 +117,36 @@
     });
     if (first) { first.focus(); return; }
 
+    const via = e.submitter?.value === "sms" ? "sms" : "wa";
+    // open the WhatsApp tab right away (inside the click) so pop-up blockers allow it, then fill it in
+    const win = via === "wa" ? window.open("", "_blank") : null;
+
     const v = (id) => $("#" + id).value.trim();
-    const timeEl = $("input[name=time]:checked", form);
-    const time = lang === "en" ? timeEl.dataset.enVal : timeEl.value;
     const vehicle = [v("f-year"), v("f-make"), v("f-model")].filter(Boolean).join(" ");
-    const opt = service.selectedOptions[0];
-    const svc = lang === "en" && opt.dataset.en ? opt.textContent : service.value;
     let day = v("f-date");
-    if (day) day = new Date(day + "T12:00").toLocaleDateString(lang === "en" ? "en-US" : "es-US", { weekday: "long", day: "numeric", month: "long" });
-    const L = lang === "en"
-      ? { hi: "Hi Tecmeca! I'd like to book a service.", name: "Name", phone: "Phone", vehicle: "Vehicle", service: "Service", details: "Problem", where: "Vehicle location", day: "Preferred day", time: "Time", anyDay: "Flexible" }
-      : { hi: "¡Hola Tecmeca! Quiero agendar un servicio.", name: "Nombre", phone: "Teléfono", vehicle: "Vehículo", service: "Servicio", details: "Problema", where: "Ubicación del vehículo", day: "Día preferido", time: "Horario", anyDay: "Flexible" };
+    if (day) day = new Date(day + "T12:00").toLocaleDateString("es-US", { weekday: "long", day: "numeric", month: "long" });
+    const details = await toSpanish(v("f-details"));
     const lines = [
-      `• ${L.name}: ${v("f-name")}`,
-      `• ${L.phone}: ${v("f-phone")}`,
-      `• ${L.vehicle}: ${vehicle}`,
-      `• ${L.service}: ${svc}`,
-      v("f-details") && `• ${L.details}: ${v("f-details")}`,
-      `• ${L.where}: ${v("f-where")}`,
-      `• ${L.day}: ${day || L.anyDay}`,
-      `• ${L.time}: ${time}`,
+      `• Nombre: ${v("f-name")}`,
+      `• Teléfono: ${v("f-phone")}`,
+      `• Vehículo: ${vehicle}`,
+      `• Servicio: ${service.value}`,
+      details && `• Problema: ${details}`,
+      `• Ubicación del vehículo: ${v("f-where")}`,
+      `• Día preferido: ${day || "Flexible"}`,
+      `• Horario: ${$("input[name=time]:checked", form).value}`,
+      lang === "en" && "• Idioma del cliente: inglés",
     ].filter(Boolean);
-    window.open(waUrl([L.hi, "", ...lines].join("\n")), "_blank", "noopener");
+    const text = ["¡Hola Tecmeca! Quiero agendar un servicio.", "", ...lines].join("\n");
+
+    if (via === "sms") {
+      location.href = smsUrl(text);
+    } else if (win) {
+      win.opener = null;
+      win.location.href = waUrl(text);
+    } else {
+      location.href = waUrl(text);
+    }
     $("#formOk").hidden = false;
   });
 })();
