@@ -4,10 +4,9 @@
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const fine = matchMedia("(hover: hover) and (pointer: fine)").matches;
   const DGP_WHATSAPP = "12398231738";
-  const PROYECTO = 865;
-  const PAGO1 = 519; // 60%
-  const PAGO2 = 346; // 40%
-  const DOMINIO = 25;
+  const PROYECTO = 685;
+  const PAGO1 = 411; // 60%
+  const PAGO2 = 274; // 40%
   const PLANES = {
     anual: { nombre: "plan anual", precio: 145, label: "Primer año", then: "$145 al año de hosting" },
     mensual: { nombre: "plan mensual", precio: 25, label: "Primer mes", then: "$25 al mes de hosting" },
@@ -199,7 +198,7 @@
   const navIO = new IntersectionObserver((es) => es.forEach((e) => {
     if (e.isIntersecting) navLinks.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === "#" + e.target.id));
   }), { rootMargin: "-45% 0px -50% 0px" });
-  ["sitio", "crm", "entrega", "inversion"].forEach((id) => navIO.observe(document.getElementById(id)));
+  ["crm", "entrega", "inversion"].forEach((id) => navIO.observe(document.getElementById(id)));
 
   /* ---------------- split words ---------------- */
   $$(".split").forEach((el) => {
@@ -365,7 +364,7 @@
 
   /* ---------------- pricing ---------------- */
   const els = {
-    domain: $("#domain"), hostName: $("#sumHostName"), host: $("#sumHost"), domainRow: $("#sumDomainRow"),
+    hostName: $("#sumHostName"), host: $("#sumHost"),
     pay1: $("#pay1"), pay2: $("#pay2"), pay1note: $("#pay1note"), pay2note: $("#pay2note"),
     total: $("#total"), then: $("#then"), mbarTotal: $("#mbarTotal"),
   };
@@ -381,26 +380,23 @@
   };
   const state = () => {
     const plan = PLANES[$("input[name=hosting]:checked").value];
-    const dom = els.domain.checked;
-    const p1 = PAGO1 + (dom ? DOMINIO : 0);
+    const p1 = PAGO1;
     const p2 = PAGO2 + plan.precio;
-    return { plan, dom, p1, p2, total: p1 + p2 };
+    return { plan, p1, p2, total: p1 + p2 };
   };
   const render = () => {
     const s = state();
     els.hostName.innerHTML = `Hosting · ${s.plan.nombre}<small>${s.plan.label}</small>`;
     els.host.textContent = money(s.plan.precio);
-    els.domainRow.hidden = !s.dom;
-    els.pay1note.textContent = s.dom ? `Proyecto $519 + dominio $25` : `Proyecto $519`;
-    els.pay2note.textContent = `Proyecto $346 + hosting ${money(s.plan.precio)}`;
+    els.pay1note.textContent = `Proyecto ${money(PAGO1)}`;
+    els.pay2note.textContent = `Proyecto ${money(PAGO2)} + hosting ${money(s.plan.precio)}`;
     tweenTo(els.pay1, s.p1, money);
     tweenTo(els.pay2, s.p2, money);
     tweenTo(els.total, s.total, (n) => n.toLocaleString("en-US"));
     tweenTo(els.mbarTotal, s.total, money);
-    els.then.textContent = `Después: ${s.plan.then}${s.dom ? " + $25 al año de dominio" : ""}.`;
+    els.then.textContent = `Después: ${s.plan.then}.`;
   };
   $$("input[name=hosting]").forEach((r) => r.addEventListener("change", render));
-  els.domain.addEventListener("change", render);
   render();
 
   /* ---------------- accept ---------------- */
@@ -414,11 +410,10 @@
     const s = state();
     const msg = [
       "Hola DGP Global Group 👋",
-      `Soy ${nameIn.value.trim()} de Tecmeca Auto Electrical Engineering y acepto la propuesta de Sitio web + Panel CRM.`,
+      `Soy ${nameIn.value.trim()} de Tecmeca Auto Electrical Engineering y acepto la propuesta del Panel CRM.`,
       "",
-      `• Proyecto (sitio + CRM): ${money(PROYECTO)}`,
+      `• Panel CRM a medida: ${money(PROYECTO)}`,
       `• Hosting: ${s.plan.nombre} (${money(s.plan.precio)}${s.plan === PLANES.anual ? "/año" : "/mes"})`,
-      `• Dominio .com: ${s.dom ? "Sí ($25)" : "No, ya tenemos dominio"}`,
       "",
       `Pago 1 al aprobar (60%): ${money(s.p1)}`,
       `Pago 2 al entregar (40%): ${money(s.p2)}`,
