@@ -1,0 +1,235 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,500..900;1,700..900&family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#ee3322;--red-d:#b51a0b;--ink:#0b0b0c;--wa:#25d366;--amber:#ffb347}
+*{box-sizing:border-box}
+body{margin:0;background:#333;font-family:Inter,sans-serif;color:#fff}
+.post{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--ink);margin:0 0 40px}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(ellipse at 60% 45%,#000 15%,transparent 75%)}
+.glow{position:absolute;border-radius:50%;filter:blur(10px);background:radial-gradient(circle,rgba(238,51,34,.55),rgba(238,51,34,.12) 40%,transparent 70%)}
+.circ{position:absolute;inset:0;width:100%;height:100%}
+.circ path{fill:none;stroke:rgba(255,255,255,.08);stroke-width:2}
+.circ .p{stroke:var(--red);stroke-width:4;stroke-linecap:round;stroke-dasharray:90 2000}
+.circ .pg{stroke:var(--red);stroke-width:14;opacity:.25;stroke-linecap:round;stroke-dasharray:90 2000}
+.circ circle{fill:var(--ink);stroke:rgba(255,255,255,.25);stroke-width:2}
+.top{position:absolute;left:70px;right:70px;top:64px;display:flex;justify-content:space-between;align-items:center;z-index:3}
+.top svg{height:86px;width:auto}
+.tag{display:inline-flex;align-items:center;gap:12px;padding:14px 22px;border-radius:999px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.14);font:700 22px Saira;letter-spacing:.08em;text-transform:uppercase}
+.tag i{width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(238,51,34,.25)}
+.kicker{display:inline-flex;align-items:center;gap:14px;font:700 24px "JetBrains Mono";letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.kicker::before{content:"";width:46px;height:4px;background:var(--red)}
+h1{margin:0;font:900 italic 118px/.88 Saira;text-transform:uppercase;letter-spacing:-.045em}
+h1 em{color:var(--red);font-style:italic;text-shadow:0 0 60px rgba(238,51,34,.55)}
+h1 .w{color:#fff}
+.lead{font:500 34px/1.35 Inter;color:rgba(255,255,255,.82)}
+.chips{display:flex;flex-wrap:wrap;gap:14px}
+.chips span{display:inline-flex;align-items:center;gap:12px;padding:16px 24px;border-radius:16px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.12);font:800 26px Saira;text-transform:uppercase;letter-spacing:.02em}
+.chips span b{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:var(--red);font:900 22px Saira}
+.cta{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:34px 70px 44px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.65) 30%,rgba(0,0,0,.9));display:flex;align-items:center;gap:26px}
+.btn{display:inline-flex;align-items:center;gap:14px;height:96px;padding:0 40px;border-radius:22px;background:var(--red);font:900 34px Saira;letter-spacing:.05em;text-transform:uppercase;box-shadow:0 20px 50px -14px rgba(238,51,34,.95)}
+.btn svg{width:36px;height:36px}
+.contact{display:grid;gap:4px}
+.contact b{display:flex;align-items:center;gap:12px;font:900 italic 46px Saira;letter-spacing:-.01em}
+.contact b svg{width:40px;height:40px;color:var(--wa)}
+.contact small{font:600 24px Inter;color:rgba(255,255,255,.7)}
+.ic{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.brands{display:flex;flex-wrap:wrap;gap:12px 30px;font:900 italic 34px Saira;text-transform:uppercase;color:rgba(255,255,255,.55)}
+
+/* ---------- concept 1: tuning ---------- */
+.c1 .glow{width:1100px;height:1100px;right:-380px;top:180px}
+.c1 .gauge{position:absolute;right:-150px;top:600px;width:700px;height:700px}
+.c1 .copy{position:absolute;left:70px;right:70px;top:220px;z-index:3;display:grid;gap:30px}
+.c1 h1{font-size:122px}
+.c1 .side{position:absolute;left:70px;top:720px;width:460px;z-index:3;display:grid;gap:30px}
+.c1 .readout{position:absolute;right:110px;top:1000px;text-align:center;z-index:3}
+.c1 .readout b{display:block;font:900 italic 120px/1 Saira;letter-spacing:-.04em}
+.c1 .readout small{font:700 22px "JetBrains Mono";letter-spacing:.25em;color:rgba(255,255,255,.6)}
+.c1 .chips{width:460px}
+
+/* ---------- concept 2: ECU ---------- */
+.c2 .glow{width:1000px;height:1000px;left:-300px;top:380px}
+.c2 .copy{position:absolute;left:70px;right:70px;top:210px;z-index:3;display:grid;gap:26px}
+.c2 h1{font-size:122px}
+.c2 .photo{position:absolute;right:60px;top:700px;width:420px;height:520px;border-radius:30px;overflow:hidden;border:3px solid rgba(255,255,255,.18);transform:rotate(5deg);box-shadow:0 50px 90px -30px #000;z-index:2}
+.c2 .photo img{width:100%;height:100%;object-fit:cover}
+.c2 .photo::after{content:"";position:absolute;left:0;right:0;top:46%;height:22%;background:linear-gradient(180deg,transparent,rgba(238,51,34,.45),transparent)}
+.c2 .list{position:absolute;left:70px;top:680px;width:560px;display:grid;gap:16px;z-index:3}
+.c2 .list div{display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:20px;background:rgba(20,20,22,.85);border:2px solid rgba(255,255,255,.12);font:800 27px Saira;text-transform:uppercase;white-space:nowrap}
+.c2 .list i{width:58px;height:58px;border-radius:15px;display:grid;place-items:center;background:rgba(238,51,34,.16);color:var(--red);flex:none}
+.c2 .list i svg{width:32px;height:32px}
+.c2 .hud{position:absolute;right:60px;top:612px;z-index:4;display:flex;align-items:center;gap:14px;padding:16px 22px;border-radius:18px;background:rgba(20,20,22,.95);border:2px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -20px #000;font:700 24px Inter}
+.c2 .hud i{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(34,197,94,.16);color:#22c55e}
+.c2 .hud small{display:block;font:500 18px Inter;color:rgba(255,255,255,.6)}
+
+/* ---------- concept 3: warning lights + mobile ---------- */
+.c3 .glow{width:900px;height:900px;left:90px;top:330px}
+.c3 .copy{position:absolute;left:70px;right:70px;top:210px;z-index:3;display:grid;gap:24px}
+.c3 h1{font-size:112px}
+.c3 .dash{position:absolute;left:70px;right:70px;top:640px;height:300px;z-index:3;display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:20px}
+.c3 .lamp{position:relative;border-radius:28px;background:linear-gradient(160deg,#1c1c1f,#111113);border:2px solid rgba(255,255,255,.1);display:grid;place-items:center;align-content:center;gap:16px;overflow:hidden}
+.c3 .lamp svg{width:130px;height:130px;filter:drop-shadow(0 0 18px currentColor)}
+.c3 .lamp span{font:800 26px Saira;text-transform:uppercase;letter-spacing:.03em;color:rgba(255,255,255,.85)}
+.c3 .lamp.amber{color:var(--amber)}
+.c3 .lamp.red{color:#ff4b3a}
+.c3 .van{background:var(--red);border-color:var(--red);color:#fff}
+.c3 .van svg{filter:none;width:120px;height:120px}
+.c3 .van span{color:#fff;font-size:30px;text-align:center;line-height:1.05}
+.c3 .brandbox{position:absolute;left:70px;right:70px;top:980px;z-index:3;display:grid;gap:14px}
+.c3 .brandbox small{font:700 20px "JetBrains Mono";letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="logo" viewBox="0 0 330 84">
+    <g fill="none" stroke-width="9"><path d="M13 60 A32 32 0 0 1 39.4 28.5" stroke="#fff" stroke-dasharray="13 4"/><path d="M50.6 28.5 A32 32 0 0 1 77 60" stroke="#ee3322" stroke-dasharray="13 4"/></g>
+    <path d="M41 62 L61 32 L48 64 Z" fill="#fff"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
+    <text x="92" y="52" font-family="Saira" font-weight="900" font-style="italic" font-size="46" fill="#ee3322" stroke="#fff" stroke-width="2.5" paint-order="stroke" textLength="228" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+    <text x="94" y="74" font-family="Saira" font-weight="500" font-size="13.5" fill="#fff" textLength="224" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+  <symbol id="copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/><path d="M13 13h4M13 17h4"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="swap" viewBox="0 0 24 24"><path d="M7 4 3 8l4 4M3 8h13a4 4 0 0 1 4 4M17 20l4-4-4-4M21 16H8a4 4 0 0 1-4-4"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="van" viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 10h4l4 3v3h-8z"/><circle cx="6" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
+  <!-- dashboard warning lamps -->
+  <symbol id="engine" viewBox="0 0 64 64"><path fill="currentColor" d="M18 18h14v5h-5v4h11l5 5h5v-6h5v22h-5v-6h-5v8h-9l-5 5H22v-8h-6v-7h-4v8H8V26h4v8h4v-7h6v-4h-4z"/></symbol>
+  <symbol id="airbag" viewBox="0 0 64 64"><g fill="currentColor"><circle cx="18" cy="11" r="6"/><path d="M12 21c0-2 1.5-3 3.5-3h4c2 0 3 1 3.6 2.6L28 33h9a3 3 0 0 1 0 6H25.5a3 3 0 0 1-2.8-2L19 27v13h9.5a3 3 0 0 1 3 3v12a3 3 0 0 1-6 0v-9H15a3 3 0 0 1-3-3z"/><circle cx="46" cy="24" r="13"/></g></symbol>
+</svg>
+
+<!-- ================= 1 ES · TUNING ================= -->
+<section class="post c1" id="p1">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="pg" d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
+  <svg class="gauge" viewBox="0 0 600 600">
+    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="3" stroke-dasharray="4 14"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="60" stroke-linecap="round" stroke-dasharray="1150 2000" opacity=".22"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
+    <g stroke="rgba(255,255,255,.4)" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
+    <g stroke="#ee3322" stroke-width="5"><path d="M540 300 H508"/><path d="M473 473 L450 450"/></g>
+    <path d="M292 300 L496 236 L300 312 Z" fill="#fff"/>
+    <circle cx="300" cy="300" r="30" fill="#0b0b0c" stroke="#ee3322" stroke-width="8"/>
+  </svg>
+  <div class="readout"><b>7.8</b><small>RPM ×1000</small></div>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Chip tuning</span></div>
+  <div class="copy">
+    <span class="kicker">Reprogramación ECU</span>
+    <h1>Más potencia.<br><em>Más respuesta.</em></h1>
+  </div>
+  <div class="side">
+    <p class="lead">Chip tuning y eco tuner para sacarle todo a tu motor, con equipo profesional.</p>
+    <div class="chips"><span><b>+</b>Potencia</span><span><b>+</b>Torque</span><span><b>−</b>Consumo</span></div>
+  </div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Agenda hoy</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · Servicio móvil</small></div></div>
+</section>
+
+<!-- ================= 2 EN · TUNING ================= -->
+<section class="post c1" id="p2">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 172 H380 L420 190 H520"/><path class="pg" d="M0 172 H380 L420 190 H520"/><path class="p" d="M0 172 H380 L420 190 H520" style="stroke-dashoffset:-200"/><circle cx="520" cy="190" r="8"/><path d="M0 1120 H220 L300 1040 H420"/><circle cx="420" cy="1040" r="9"/></svg>
+  <svg class="gauge" viewBox="0 0 600 600">
+    <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="3" stroke-dasharray="4 14"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="60" stroke-linecap="round" stroke-dasharray="1150 2000" opacity=".22"/>
+    <path d="M97 503 A287 287 0 1 1 503 503" fill="none" stroke="#ee3322" stroke-width="26" stroke-linecap="round" stroke-dasharray="1150 2000"/>
+    <g stroke="rgba(255,255,255,.4)" stroke-width="4"><path d="M127 473 L150 450"/><path d="M60 300 H92"/><path d="M127 127 L150 150"/><path d="M300 60 V92"/><path d="M473 127 L450 150"/></g>
+    <g stroke="#ee3322" stroke-width="5"><path d="M540 300 H508"/><path d="M473 473 L450 450"/></g>
+    <path d="M292 300 L496 236 L300 312 Z" fill="#fff"/>
+    <circle cx="300" cy="300" r="30" fill="#0b0b0c" stroke="#ee3322" stroke-width="8"/>
+  </svg>
+  <div class="readout"><b>7.8</b><small>RPM ×1000</small></div>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Chip tuning</span></div>
+  <div class="copy">
+    <span class="kicker">ECU reflash</span>
+    <h1>More power.<br><em>Sharper response.</em></h1>
+  </div>
+  <div class="side">
+    <p class="lead">Chip tuning and eco tuner to unlock your engine, done with pro equipment.</p>
+    <div class="chips"><span><b>+</b>Power</span><span><b>+</b>Torque</span><span><b>−</b>Fuel use</span></div>
+  </div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Book today</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · Mobile service</small></div></div>
+</section>
+
+<!-- ================= 3 ES · ECU ================= -->
+<section class="post c2" id="p3">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="pg" d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
+  <div class="copy">
+    <span class="kicker">Computadoras · ECU</span>
+    <h1>¿Cambiaste la<br><em>computadora?</em></h1>
+    <p class="lead">La programamos, la clonamos y la dejamos funcionando. Vamos a donde estés.</p>
+  </div>
+  <div class="list">
+    <div><i><svg class="ic"><use href="#cpu"/></svg></i>Programación de ECU</div>
+    <div><i><svg class="ic"><use href="#copy"/></svg></i>Clonación de computadoras</div>
+    <div><i><svg class="ic"><use href="#swap"/></svg></i>Cambio de módulos</div>
+    <div><i><svg class="ic"><use href="#lock"/></svg></i>Immo off</div>
+  </div>
+  <div class="photo"><img src="../../assets/diagnostico.webp"></div>
+  <div class="hud"><i><svg class="ic" style="width:26px;height:26px"><use href="#check"/></svg></i><div>ECU programada<small>Lista para encender</small></div></div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Agenda hoy</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · Llama, texto o WhatsApp</small></div></div>
+</section>
+
+<!-- ================= 4 EN · ECU ================= -->
+<section class="post c2" id="p4">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M1080 150 H820 L760 210 H600"/><path class="pg" d="M1080 150 H820 L760 210 H600"/><path class="p" d="M1080 150 H820 L760 210 H600" style="stroke-dashoffset:-200"/><circle cx="600" cy="210" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Mobile service</span></div>
+  <div class="copy">
+    <span class="kicker">Computers · ECU</span>
+    <h1>Replaced your<br><em>computer?</em></h1>
+    <p class="lead">We program it, clone it and get it running again. We come to you.</p>
+  </div>
+  <div class="list">
+    <div><i><svg class="ic"><use href="#cpu"/></svg></i>ECU programming</div>
+    <div><i><svg class="ic"><use href="#copy"/></svg></i>ECU cloning</div>
+    <div><i><svg class="ic"><use href="#swap"/></svg></i>Module replacement</div>
+    <div><i><svg class="ic"><use href="#lock"/></svg></i>Immo off</div>
+  </div>
+  <div class="photo"><img src="../../assets/diagnostico.webp"></div>
+  <div class="hud"><i><svg class="ic" style="width:26px;height:26px"><use href="#check"/></svg></i><div>ECU programmed<small>Ready to start</small></div></div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Book today</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · Call, text or WhatsApp</small></div></div>
+</section>
+
+<!-- ================= 5 ES · LAMPS ================= -->
+<section class="post c3" id="p5">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="pg" d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Servicio móvil</span></div>
+  <div class="copy">
+    <span class="kicker">Diagnóstico · DTC off · Airbag</span>
+    <h1>¿Se encendió<br>esta <em>luz?</em></h1>
+    <p class="lead">Leemos y eliminamos códigos de falla y reseteamos el módulo de airbag, donde estés.</p>
+  </div>
+  <div class="dash">
+    <div class="lamp amber"><svg><use href="#engine"/></svg><span>Check engine</span></div>
+    <div class="lamp red"><svg><use href="#airbag"/></svg><span>Airbag</span></div>
+    <div class="lamp van"><svg class="ic" style="stroke-width:1.8"><use href="#van"/></svg><span>Vamos<br>a donde estés</span></div>
+  </div>
+  <div class="brandbox"><small>Marcas con las que trabajamos</small><div class="brands"><span>Ford</span><span>Chevrolet</span><span>Jeep</span><span>Toyota</span><span>Honda</span><span>Mitsubishi</span><span>Hyundai</span><span>Kia</span></div></div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Agenda hoy</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · Español e inglés</small></div></div>
+</section>
+
+<!-- ================= 6 EN · LAMPS ================= -->
+<section class="post c3" id="p6">
+  <div class="grid"></div><div class="glow"></div>
+  <svg class="circ" viewBox="0 0 1080 1350"><path d="M0 1170 H200 L240 1140 H330"/><path class="pg" d="M0 1170 H200 L240 1140 H330"/><path class="p" d="M0 1170 H200 L240 1140 H330" style="stroke-dashoffset:-60"/><path d="M1080 960 H900 L860 920 H780"/><circle cx="780" cy="920" r="9"/></svg>
+  <div class="top"><svg viewBox="0 0 330 84"><use href="#logo"/></svg><span class="tag"><i></i>Mobile service</span></div>
+  <div class="copy">
+    <span class="kicker">Diagnostics · DTC off · Airbag</span>
+    <h1>Is this light<br><em>on?</em></h1>
+    <p class="lead">We read and clear fault codes and reset airbag modules, wherever you are.</p>
+  </div>
+  <div class="dash">
+    <div class="lamp amber"><svg><use href="#engine"/></svg><span>Check engine</span></div>
+    <div class="lamp red"><svg><use href="#airbag"/></svg><span>Airbag</span></div>
+    <div class="lamp van"><svg class="ic" style="stroke-width:1.8"><use href="#van"/></svg><span>We come<br>to you</span></div>
+  </div>
+  <div class="brandbox"><small>Makes we work on</small><div class="brands"><span>Ford</span><span>Chevrolet</span><span>Jeep</span><span>Toyota</span><span>Honda</span><span>Mitsubishi</span><span>Hyundai</span><span>Kia</span></div></div>
+  <div class="cta"><span class="btn"><svg class="ic"><use href="#cal"/></svg>Book today</span><div class="contact"><b><svg><use href="#wa"/></svg>(214) 930-7707</b><small>tecmecatx.com · English &amp; Spanish</small></div></div>
+</section>
+</body></html>
