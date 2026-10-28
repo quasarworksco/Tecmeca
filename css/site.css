@@ -82,6 +82,9 @@ p { margin: 0; }
 .hero h1 { font-weight: 900; font-size: clamp(44px, 6.4vw, 84px); line-height: .92; letter-spacing: -.04em; margin-bottom: 22px; }
 .hero h1 em { font-style: italic; color: var(--red); text-shadow: 0 0 50px rgba(238,51,34,.4); }
 .hero h1 .ln { display: block; overflow: hidden; padding-bottom: .05em; }
+/* once the lines are in, stop clipping so the red glow isn't cut into a box */
+.js .hero h1 .ln { overflow: visible; clip-path: inset(0 -1em); animation: lnUnclip 0s 1.4s forwards; }
+@keyframes lnUnclip { to { clip-path: none; } }
 .hero h1 .ln > span { display: inline-block; transform: translateY(105%); animation: lineUp .9s var(--ease) forwards; animation-delay: calc(.05s + var(--i) * .09s); }
 @keyframes lineUp { to { transform: none; } }
 .hero__lead { font-size: clamp(16px, 1.5vw, 18px); color: rgba(255,255,255,.74); max-width: 540px; margin-bottom: 30px; }
@@ -155,6 +158,8 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .svc__card::after { content: ""; position: absolute; right: -50px; top: -50px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(238,51,34,.25), transparent 70%); transition: transform .6s var(--ease); }
 .svc__card:hover { transform: translateY(-6px); border-color: rgba(238,51,34,.5); background: var(--char-2); }
 .svc__card:hover::after { transform: scale(1.6); }
+.svc__card::after { pointer-events: none; }
+.svc__card > :not(.svc__tag) { position: relative; z-index: 1; }
 .svc__card i { width: 54px; height: 54px; border-radius: 15px; display: grid; place-items: center; background: rgba(238,51,34,.14); color: var(--red); margin-bottom: 20px; transition: background .35s, color .35s, transform .45s var(--ease); }
 .svc__card:hover i { background: var(--red); color: #fff; transform: rotate(-8deg); }
 .svc__card i .ic { width: 26px; height: 26px; }
@@ -170,6 +175,8 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .svc__card--feat h3 { font-size: clamp(24px, 2.4vw, 32px); }
 .svc__card--feat p { font-size: 15px; max-width: 46ch; color: rgba(255,255,255,.72); }
 .svc__card--feat button { margin-top: 6px; }
+.svc__card--feat i { margin-bottom: auto; }
+.svc__card--feat h3 { margin-top: 28px; }
 .svc__fits { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; }
 .svc__fits span { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid var(--line); font: 600 12.5px var(--sans); color: rgba(255,255,255,.85); }
 .svc__tag { position: absolute; top: 18px; right: 18px; z-index: 1; padding: 5px 11px; border-radius: 999px; background: var(--red); color: #fff; font: 700 11px var(--display); letter-spacing: .1em; text-transform: uppercase; }
@@ -194,7 +201,8 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 /* why */
 .why { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .why div { padding: 26px 24px; border-radius: 18px; background: var(--char); border: 1px solid var(--line); }
-.why b { display: block; font: 900 italic 42px/1 var(--display); color: var(--red); margin-bottom: 10px; letter-spacing: -.03em; }
+.why b { display: flex; align-items: center; height: 1em; font: 900 italic 42px/1 var(--display); color: var(--red); margin-bottom: 10px; letter-spacing: -.03em; }
+.why b .ic { width: 1em; height: 1em; }
 .why h3 { font-size: 17px; margin-bottom: 6px; }
 .why p { font-size: 14px; color: rgba(255,255,255,.62); }
 
@@ -212,6 +220,7 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .radar__dot::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255,255,255,.15); }
 .cities { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 26px; }
 .cities span { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.05); border: 1px solid var(--line); font-size: 14px; }
+.cities .cities__all { background: rgba(238,51,34,.14); border-color: rgba(238,51,34,.5); color: #fff; font-weight: 600; }
 
 /* booking */
 .book { display: grid; grid-template-columns: 1fr 1.25fr; gap: 40px; align-items: start; }
@@ -233,7 +242,7 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .form > p { color: var(--steel); font-size: 14px; margin-bottom: 22px; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .grid3 { display: grid; grid-template-columns: .8fr 1fr 1fr; gap: 14px; }
-.field { display: grid; gap: 6px; margin-bottom: 14px; }
+.field { display: grid; align-content: start; gap: 6px; margin-bottom: 14px; }
 .field label, .field__label { font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,.75); letter-spacing: .02em; }
 .field input, .field select, .field textarea { width: 100%; height: 50px; padding: 0 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.14); background: #0f0f11; color: #fff; outline: none; transition: border-color .25s, box-shadow .25s; }
 .field textarea { height: 96px; padding: 12px 14px; resize: vertical; }
@@ -316,9 +325,9 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
   .svc__card i { width: 50px; height: 50px; margin: 0; grid-row: span 3; }
   .svc__card h3 { font-size: 17px; margin-bottom: 4px; }
   .svc__card p { margin-bottom: 10px; font-size: 13.5px; }
-  .svc__card--feat { grid-column: auto; padding: 22px 18px 18px; }
-  .svc__card--feat i { width: 50px; height: 50px; }
-  .svc__card--feat h3 { font-size: 19px; padding-right: 64px; }
+  .svc__card--feat { grid-column: auto; display: flex; padding: 20px 18px 18px; }
+  .svc__card--feat i { width: 50px; height: 50px; margin-bottom: 16px; }
+  .svc__card--feat h3 { font-size: 21px; margin: 0 0 8px; }
   .svc__tag { top: 14px; right: 14px; }
   .svc__fits { margin-bottom: 12px; gap: 6px; }
   .svc__fits span { padding: 4px 10px; font-size: 11.5px; }
@@ -337,6 +346,8 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
   .h2 { font-size: clamp(32px, 9vw, 40px); }
   .visual { height: 360px; }
   .grid2, .grid3 { grid-template-columns: 1fr; gap: 0; }
+  .grid3 { grid-template-columns: 76px 1fr 1fr; gap: 10px; }
+  .cta div, .cta .btn { width: 100%; }
   .foot__grid { grid-template-columns: 1fr; }
   .fab { display: none; }
   .dock { display: grid; }
