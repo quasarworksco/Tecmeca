@@ -142,11 +142,15 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .js .rv.is-in { opacity: 1; transform: none; }
 
 /* brands */
-.brands { padding: 26px 0; background: #111113; border-bottom: 1px solid var(--line); }
-.brands .container { display: flex; align-items: center; justify-content: space-between; gap: 18px 28px; flex-wrap: wrap; }
+.brands { padding: 30px 0 34px; background: #111113; border-bottom: 1px solid var(--line); }
+.brands .container { display: grid; gap: 16px; justify-items: center; }
 .brands small { font: 500 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--steel); }
-.brands span { font: 800 italic 21px var(--display); text-transform: uppercase; color: rgba(255,255,255,.32); transition: color .3s; }
-.brands span:hover { color: #fff; }
+.brands__grid { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.brands__grid li { display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; border-radius: 14px; background: rgba(255,255,255,.03); border: 1px solid var(--line); color: rgba(255,255,255,.5); transition: color .3s, border-color .3s, background .3s; }
+.brands__grid li:hover { color: #fff; border-color: rgba(238,51,34,.45); background: rgba(238,51,34,.06); }
+.brands__grid svg { width: 30px; height: 30px; flex: none; }
+.brands__grid svg.wide { width: 48px; transform: scale(1.5); }
+.brands__grid span { font: 800 italic 16px var(--display); text-transform: uppercase; letter-spacing: .02em; }
 
 /* services */
 .svc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -159,6 +163,13 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
 .svc__card i .ic { width: 26px; height: 26px; }
 .svc__card h3 { font-size: 19px; font-weight: 800; margin-bottom: 8px; line-height: 1.1; }
 .svc__card p { color: rgba(255,255,255,.6); font-size: 14px; line-height: 1.55; margin-bottom: 18px; }
+.svc__card--feat { grid-column: 1 / -1; display: grid; grid-template-columns: 64px 1fr auto; align-items: center; column-gap: 22px; border-color: rgba(238,51,34,.45); background: linear-gradient(100deg, rgba(238,51,34,.12), var(--char) 60%); }
+.svc__card--feat i { width: 64px; height: 64px; margin: 0; background: var(--red); color: #fff; }
+.svc__card--feat i .ic { width: 30px; height: 30px; }
+.svc__card--feat h3 { font-size: 23px; }
+.svc__card--feat p { margin-bottom: 0; max-width: 720px; }
+.svc__card--feat button { margin: 0; align-self: center; }
+.svc__tag { display: inline-block; margin-bottom: 8px; padding: 3px 9px; border-radius: 6px; background: var(--red); color: #fff; font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
 .svc__card button { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 0; border: 0; background: none; color: var(--red); font: 700 12.5px var(--display); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
 .svc__card button .ic { width: 15px; height: 15px; transition: transform .3s var(--ease); }
 .svc__card button:hover .ic { transform: translateX(4px); }
@@ -285,6 +296,9 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
   .burger { display: grid; }
   .nav .btn { display: none; }
   .svc, .symp, .why { grid-template-columns: 1fr 1fr; }
+  .brands__grid { grid-template-columns: repeat(4, 1fr); }
+  .svc__card--feat { grid-template-columns: 64px 1fr; row-gap: 14px; }
+  .svc__card--feat button { grid-column: 2; justify-self: start; }
   .foot__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 880px) {
@@ -304,6 +318,12 @@ section { position: relative; padding: clamp(70px, 9vw, 120px) 0; }
   .svc__card i { width: 50px; height: 50px; margin: 0; grid-row: span 3; }
   .svc__card h3 { font-size: 17px; margin-bottom: 4px; }
   .svc__card p { margin-bottom: 10px; font-size: 13.5px; }
+  .svc__card--feat { row-gap: 0; }
+  .svc__card--feat h3 { font-size: 18px; }
+  .svc__card--feat p { margin-bottom: 10px; }
+  .brands__grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .brands__grid li { flex-direction: column; gap: 5px; height: 66px; }
+  .brands__grid span { font-size: 12.5px; }
   .symp, .why { grid-template-columns: 1fr 1fr; gap: 10px; }
   .symp div, .why div { padding: 18px 16px; }
   .symp h3, .why h3 { font-size: 15px; }
