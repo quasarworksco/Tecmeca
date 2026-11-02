@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,500..900;1,700..900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#888}
+.sq{position:relative;width:1024px;height:1024px;background:#fff;display:grid;place-items:center;margin-bottom:20px}
+.sq svg{display:block}
+.guide{position:absolute;inset:0;border-radius:50%;outline:2px dashed rgba(0,0,0,.25);display:none}
+.show .guide{display:block}
+</style></head><body>
+<!-- stacked: gauge mark over the wordmark, sized for Facebook's circular crop -->
+<div class="sq" id="stack"><div class="guide"></div>
+<svg width="680" height="560" viewBox="0 0 340 280">
+  <g transform="translate(71 -14) scale(2.2)">
+    <g fill="none" stroke-width="9"><path d="M13 60 A32 32 0 0 1 39.4 28.5" stroke="#18181b" stroke-dasharray="13 4"/><path d="M50.6 28.5 A32 32 0 0 1 77 60" stroke="#ee3322" stroke-dasharray="13 4"/></g>
+    <path d="M41 62 L61 32 L48 64 Z" fill="#18181b"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
+  </g>
+  <text x="170" y="210" text-anchor="middle" font-family="Saira" font-weight="900" font-style="italic" font-size="78" fill="#ee3322" stroke="#18181b" stroke-width="3.5" paint-order="stroke" textLength="316" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+  <text x="170" y="246" text-anchor="middle" font-family="Saira" font-weight="600" font-size="19" fill="#18181b" textLength="300" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+</svg></div>
+<!-- horizontal: the site logo as is -->
+<div class="sq" id="horiz"><div class="guide"></div>
+<svg width="820" height="209" viewBox="0 0 330 84">
+  <g fill="none" stroke-width="9"><path d="M13 60 A32 32 0 0 1 39.4 28.5" stroke="#18181b" stroke-dasharray="13 4"/><path d="M50.6 28.5 A32 32 0 0 1 77 60" stroke="#ee3322" stroke-dasharray="13 4"/></g>
+  <path d="M41 62 L61 32 L48 64 Z" fill="#18181b"/><circle cx="45" cy="62" r="5" fill="#ee3322"/>
+  <text x="92" y="52" font-family="Saira" font-weight="900" font-style="italic" font-size="46" fill="#ee3322" stroke="#18181b" stroke-width="2.5" paint-order="stroke" textLength="228" lengthAdjust="spacingAndGlyphs">TECMECA</text>
+  <text x="94" y="74" font-family="Saira" font-weight="500" font-size="13.5" fill="#18181b" textLength="224" lengthAdjust="spacing">AUTO ELECTRICAL ENGINEERING</text>
+</svg></div>
+</body></html>
